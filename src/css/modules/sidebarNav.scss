@@ -13,11 +13,6 @@
   background-repeat: no-repeat;
   /*background-position: center;*/
 
-  @mixin atTablet
-  {
-    display:none;
-  }
-
   &__logo
   {
     width:100%;

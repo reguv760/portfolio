@@ -1,0 +1,56 @@
+
+/* =================
+container pagination
+==================== */
+.pagination
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:2rem auto;
+
+  &__container
+  {
+    font-family: 'Ubuntu Mono', monospace;
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $subtleWhite;
+
+    @mixin atSmall
+    {
+      font-size: 1.6rem;
+    }
+
+    & li
+    {
+      display:inline-block;
+    }
+
+    & li a
+    {
+      text-decoration:none;
+      color:$mediumGrey;
+    }
+
+    & li a:hover
+    {
+      color:$darkGrey;
+    }
+
+    & li a.active_link
+    {
+      color:$brightGreen;
+    }
+
+    li::after
+    {
+      content:" | ";
+    }
+
+    li:last-child::after
+    {
+      content:"";
+    }
+  }
+}
