@@ -27,8 +27,8 @@ const Sidebar = () => (
       <p><a href="mailto:reguv760@gmail.com">reguv760@gmail.com</a></p>
         </div>
 
-    <div class="sidebar__footer">
-      <ul class="socialmedia">
+    <div className="sidebar__footer">
+      <ul className="socialmedia">
               <li>
           <a href="https://www.linkedin.com/in/reggiegalang/" target="_blank" className="svg"  rel="noopener noreferrer">
             <img src={LinkedIn} alt="Linkedin Icon"/>  
