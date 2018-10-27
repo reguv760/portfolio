@@ -1,0 +1,157 @@
+.sidebar
+{
+  display: block;
+  grid-area:leftCol;
+  height:100vh;
+  width:20rem;
+  background-color:$off-white;
+  position:fixed;
+
+  /* background:url("../assets/img/rg-logoGlyph.svg");  use this for development make sure bg exist in temp */
+  background:url("../img/rg-logoGlyph.svg"); /* use this for docs build! make sure bg exist in temp */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+
+  @mixin atTablet
+  {
+    display:none;
+  }
+
+  &__logo
+  {
+    width:100%;
+    height:15rem;
+    margin:0 0 1rem 0;
+    padding:0.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+    & object 
+    {
+      width:75%;
+      height:75%;
+    }
+
+  }
+
+  /* side bar footer */
+  &__footer
+  {
+  	display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color:$mediumGrey;
+
+  	min-height:8rem;
+  	width:100%;
+
+  	position:absolute;
+  	left:0;
+  	bottom:1rem;
+
+    & .socialmedia
+    {
+      display:block;
+      list-style-type: none;
+
+      li
+      {
+        display: inline-block;
+        margin:0 0.25rem;
+      }
+
+      li a img,
+      li a object
+      {
+          width:3.5rem;
+          height:3.5rem;
+      }
+
+      li a:hover,
+      li a:hover
+      {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__footerText p
+  {
+    font-family: 'Ubuntu Mono', monospace;
+  	margin:0.5rem 0;
+  	font-size: 1.4rem;
+    text-align: center;
+  }
+
+  /* sidebar nav */
+  &__nav
+  {
+    display:block;
+    list-style-type: none;
+		position: relative;
+	  margin:0 auto 1rem auto;
+    width:75%;
+
+    & li
+    {
+      top:0;
+      left:0;
+      width:100%;
+      margin:0 auto 1.2rem auto;
+    }
+
+    & li a
+    {
+      font-family: 'Ubuntu Mono', monospace;
+      color:$subtleWhite;
+      font-size:2.4rem;
+  		font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.0125em;
+    }
+
+    & li a:hover
+    {
+    	color:$darkGrey;
+    }
+
+    & li a.active_link
+    {
+    	color:$neonGreen;
+    }
+  }
+
+  /* sidebar header */
+  &__header
+  {    
+    font-size:1.4rem;
+    line-height:1.4em;
+    color:$subtleWhite;
+    width:75%;
+    margin:0 auto;
+
+    & p
+    {
+      margin:2rem 0;
+    }
+
+    & a
+    {
+      font-family: 'Ubuntu Mono', monospace;
+      letter-spacing: 0.0125em;
+      color:$darkGreen;
+      text-decoration: none;
+    }
+
+    & a:hover
+    {
+      color:$darkGrey;
+    }
+  }
+}

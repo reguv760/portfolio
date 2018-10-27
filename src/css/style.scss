@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:700|Ubuntu:400,500,700');
+
+/* base CSS */
+/* @import 'base/_reset.css'; */ 
+
+/* variables */
+
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+
+/* page layouts */
+@import 'base/layout.scss';
+@import 'base/global.scss'; /* this is the master scss for RG site */
+/* @import 'base/_global.css'; */
+
+/* modules */
+@import 'modules/sidebarNav.scss';
+@import 'modules/mainContainer.scss';
+
+/* svg 
+@import 'modules/_sprite.css'; 
+
+@import 'modules/_mobileNav.css';
+@import 'modules/_pageHeader.css';
+@import 'modules/_pagination.css';
+@import 'modules/_portfolio.css';
+@import 'modules/_pagefooter.css';
+@import 'modules/_about.css'; */

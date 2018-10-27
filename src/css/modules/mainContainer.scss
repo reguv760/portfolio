@@ -1,0 +1,113 @@
+.container
+{
+  grid-area:rightCol;
+  width:100%;
+  background-color: $off-black;
+
+  & header
+  {
+     display:none;
+     align-items: center;
+     width:100%;
+     min-height: 15rem;
+     background-color: $off-black;
+
+     @mixin atTablet
+     {
+      display:flex;
+     }
+  }
+
+  & section
+  {
+    width:100%;
+    background-color: $off-black;
+  }
+
+  &__header
+  {
+    display:block;
+    margin:0 0 0 2rem;
+    
+    & p
+    {
+      color:$subtleWhite;
+    	font-size:2.2rem;
+    	line-height: 3rem;
+    	margin:2rem;
+
+      @mixin atSmall
+      {
+        font-size: 1.8rem;
+      	line-height: 2.4rem;
+      }
+    }
+
+    & a
+    {
+    	text-decoration: none;
+    	color:$darkGreen;
+    }
+
+    & a:hover
+    {
+    	color:$darkGrey;
+    }
+  }
+}
+
+/* =================
+container pagination
+==================== */
+.pagination
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:2rem auto;
+
+  &__container
+  {
+    font-family: 'Ubuntu Mono', monospace;
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $subtleWhite;
+
+    @mixin atSmall
+    {
+      font-size: 1.6rem;
+    }
+
+    & li
+    {
+      display:inline-block;
+    }
+
+    & li a
+    {
+      text-decoration:none;
+      color:$mediumGrey;
+    }
+
+    & li a:hover
+    {
+      color:$darkGrey;
+    }
+
+    & li a.active_link
+    {
+      color:$brightGreen;
+    }
+
+    li::after
+    {
+      content:" | ";
+    }
+
+    li:last-child::after
+    {
+      content:"";
+    }
+  }
+}
