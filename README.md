@@ -20,6 +20,12 @@
 
 2.  **Run Gatsby Portfolio Site**
 
+    Make sure gatsby-cli is installed
+
+    ```sh
+    npm install -g gatsby-cli
+    ```
+    
     Inside folder, load site in local default browser by typing:
 
     ```sh
