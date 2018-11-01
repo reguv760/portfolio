@@ -14,10 +14,6 @@ container pagination
     font-weight: 500;
     color: $subtleWhite;
 
-    @mixin atSmall {
-      font-size: 1.6rem;
-    }
-
     & li {
       display: inline-block;
     }

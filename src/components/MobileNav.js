@@ -5,11 +5,12 @@ import RGlogo from './../icons/rg-logo.png'
 import PortfolioIcon from './../icons/portfolio.png'
 import ResumeIcon from './../icons/resume.png'
 
-const MobileNav = () => 
-(
+import Resume from './../ReginaldGalang-resume.pdf'
+
+const MobileNav = () => (
 	<nav className="mobileNav">
 		<div className="mobileNav__logo">
-			<img src={RGlogo} alt="RG: Reggie Galang mobile glyph"/>  
+			<img src={RGlogo} alt="RG: Reggie Galang mobile glyph" />
 		</div>
 
 		<ul className="mobileNav__links">
@@ -20,8 +21,13 @@ const MobileNav = () =>
 				</Link>
 			</li>
 			<li>
-				<a href="reggiegalang-resume18.pdf" className="svg" target="_blank">
-					<img src={ResumeIcon} alt="Resume Mobile Icon"/>
+				<a
+					href={Resume}
+					className="svg"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src={ResumeIcon} alt="Resume Mobile Icon" />
 					<p>R&eacute;sum&eacute;</p>
 				</a>
 			</li>

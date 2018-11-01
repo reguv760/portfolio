@@ -34,7 +34,13 @@ const PageFooter = () => (
     </ul>
 
     <p>#using CSS Grid + Flexbox</p>
-    <p>Site updated: 10.20.18</p>
+    <p>
+      Built with{' '}
+      <a href="http://gatsbyjs.org" target="_blank" rel="noopener noreferrer">
+        GatsbyJS
+      </a>
+    </p>
+    <p>Site updated: 10.26.18</p>
   </footer>
 )
 

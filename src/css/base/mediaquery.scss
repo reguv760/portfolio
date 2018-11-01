@@ -4,10 +4,61 @@
   .mainContainer {
     grid-template-rows: 10rem 1fr; /* match height of mobileNav__logo */
 
+    & .mobileNav {
+      display: flex;
+
+      &__logo {
+        width: 12rem;
+        height: 10rem;
+      }
+
+      &__links {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 60%;
+
+        & li img {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+      }
+
+      & li a {
+        font-size: 1.2rem;
+      }
+    }
+
+    & .pagination {
+      &__container {
+        font-size: 1.6rem;
+      }
+    }
+
     & .container {
+      //container header::
       &__header p {
         font-size: 1.8rem;
         line-height: 2.4rem;
+      }
+
+      & .portfolio {
+        & h2 {
+          font-size: 2rem;
+        }
+
+        &__website-container {
+          &--hero {
+            width: 100%;
+          }
+
+          &--subcontent {
+            width: 35%;
+            &-tablet {
+              width: 42.5%;
+            }
+          }
+        }
       }
     }
   }
@@ -20,21 +71,21 @@ TABLET::: */
     display: none;
   }
 
-  & .mobileNav {
-    display: flex;
-
-    &__logo {
-      height: 12.5rem;
-      width: 15rem;
-    }
-  }
-
   .mainContainer {
     grid-template-columns: 100%;
     grid-template-rows: 15rem 1fr;
     grid-template-areas:
       'mobileNav  mobileNav   mobileNav   mobileNav'
       'rightCol   rightCol  rightCol  rightCol';
+
+    & .mobileNav {
+      display: flex;
+
+      &__logo {
+        height: 12.5rem;
+        width: 15rem;
+      }
+    }
 
     & .container {
       & header {

@@ -33,7 +33,10 @@ const IndexPage = () => (
 	<Layout>
 		<div className="mainContainer">
 			<Sidebar />
+
+			{/* only visible when < Tabket */}
 			<MobileNav />
+
 			<PageContainer name="container">
 				<ContainerHeader />
 

@@ -5,10 +5,6 @@
     'mobileNav  mobileNav   mobileNav    mobileNav'
     'leftCol    rightCol  rightCol     rightCol';
 
-  @mixin atSmall {
-    grid-template-rows: 10rem 1fr; /* match height of mobileNav__logo */
-  }
-
   & .container {
     grid-area: rightCol;
     width: 100%;
@@ -32,12 +28,11 @@
         font-size: 2.2rem;
         line-height: 3rem;
         margin: 2rem;
-
-        @mixin atSmall {
-          font-size: 1.8rem;
-          line-height: 2.4rem;
-        }
       }
+    }
+
+    &__headerEmail {
+      font-family: 'Ubuntu Mono', monospace;
 
       & a {
         text-decoration: none;

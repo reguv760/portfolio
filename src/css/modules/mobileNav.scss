@@ -1,112 +1,72 @@
-.mobileNav
-{
-    display:none;
+.mobileNav {
+  display: none;
+  flex-flow: row nowrap;
+  grid-area: mobileNav;
+  background-color: $off-black;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+
+  &__logo {
+    height: 15rem;
+    width: 18rem;
+    /* background-color:$off-black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      padding: 1rem;
+      object-fit: contain;
+    }
+  }
+
+  &__links {
+    display: flex;
     flex-flow: row nowrap;
-    grid-area: mobileNav;
-    background-color:$off-black;
     justify-content: space-around;
-    position: fixed;
-    z-index: 1000;
-    width:100%;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto 1rem auto;
 
-    &__logo
-    {
-        height:15rem;
-        width:18rem;
-        /* background-color:$off-black; */
-        display:flex;
-        justify-content: center;
-        align-items: center;
-
-        & img 
-        {
-          padding:1rem;
-          object-fit:contain;
-        }
-
-        @mixin atSmall
-        {
-          width:12rem;
-          height:10rem;
-        }
+    & li {
+      /* centers both icons + p */
+      display: flex;
+      justify-content: center;
+      margin: 0.5rem auto;
+      height: 6rem;
     }
 
-    &__links
-    {
-      display:flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
-      align-items: center;
-      width:100%;
-      list-style-type: none;
-  		position: relative;
-      top:0;
-      left:0;
-  	  margin:0 auto 1rem auto;
-
-      & li
-      {        
-        /* centers both icons + p */
-        display:flex;
-        justify-content: center;
-      	margin:0.5rem auto;
-      	height:6rem;      
-      }
-
-      & li p
-      {
-      	color:$mediumGrey;
-      }
-
-      & li object,
-      & li img
-      {
-        width:6rem;
-        height:6rem;
-
-/*        g
-        {
-          fill:$off-white;
-        }*/
-
-        @mixin atSmall
-        {
-          width:4.5rem;
-      		height:4.5rem;
-        }
-      }
-
-      & .active_link p
-      {
-        color: $neonGreen;
-      }
-
-      @mixin atSmall
-      {
-        flex-flow: row nowrap;
-    		justify-content: space-around;
-    	  margin:0 auto ;
-        width:60%;
-      }
+    & li p {
+      color: $mediumGrey;
     }
 
-    & li a
-    {
-        text-align: center;
-        text-decoration: none;
-        color:$off-black;
-        font-size: 1.4rem;
-        font-weight: 500;
-        letter-spacing: 0.0125em;
-
-        @mixin atSmall
-        {
-          font-size: 1.2rem;
-        }
+    & li object,
+    & li img {
+      width: 6rem;
+      height: 6rem;
     }
 
-    & li a:hover
-    {
-    	opacity: 0.6;
+    & .active_link p {
+      color: $neonGreen;
     }
+  }
+
+  & li a {
+    text-align: center;
+    text-decoration: none;
+    color: $off-black;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.0125em;
+  }
+
+  & li a:hover {
+    opacity: 0.6;
+  }
 }

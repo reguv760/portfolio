@@ -5,6 +5,8 @@ import RGlogo from './../icons/rg-logo.png'
 import LinkedIn from './../icons/linkedIn.png'
 import GitHub from './../icons/github.png'
 
+import Resume from './../ReginaldGalang-resume.pdf'
+
 const Sidebar = () => (
   <aside className="sidebar">
     <div className="sidebar__logo">
@@ -19,11 +21,7 @@ const Sidebar = () => (
           </Link>
         </li>
         <li>
-          <a
-            href="./reggiegalang-resume18.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={Resume} target="_blank" rel="noopener noreferrer">
             R&eacute;sum&eacute;
           </a>
         </li>
