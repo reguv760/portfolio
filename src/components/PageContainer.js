@@ -4,6 +4,10 @@ import React from 'react'
 import Pagination from './Pagination'
 import PageFooter from './PageFooter'
 
+//projects
+import MyWetPaint from './../projects/MyWetPaint'
+import Doahu from './../projects/Doahu'
+
 const PageContainer = ({name, children}) => (
   <div className={name}>
     {children}
@@ -11,57 +15,8 @@ const PageContainer = ({name, children}) => (
     <Pagination />
 
     <section>
-      <div className="portfolio">
-        <h2>My Wet Paint Studio</h2>
-        <div className="portfolio__website">
-          <ul className="portfolio__website-container">
-            <li className="portfolio__website-container--fullWidth">
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  { /* <h3>This is my title</h3> */ }
-                  <p>Portfolio for Los Angeles based fine artist.</p>
-                </div>
-              </div>
-              <img className="lazyload" data-src="./assets/img/web/mywetpaint.jpg" width="1280" height="800" alt="Hero"/>
-            </li>
-
-            <li className="portfolio__website-container--subcontent">
-              <img alt="thumbnail" className="portfolio__website--mobile lazyload" data-src="./assets/img/web/mywetpaint-iPhone6.jpg" width="800" height="800"/>
-            </li>
-            <li className="portfolio__website-container--link">
-              <span className="portfolio__link"><a href="http://mywetpaintstudio.com" target="blank" rel="noopener noreferrer">Visit Website =></a></span>
-            </li>
-            
-          </ul>
-        </div>
-      </div>
-
-      <div className="portfolio">
-        <h2>Destination: Oahu</h2>
-
-        <div className="portfolio__website">
-          <ul className="portfolio__website-container">
-            <li className="portfolio__website-container--hero">
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  { /* <!-- <h3>This is my title</h3> --> */ }
-                  <p>Travel website promoting both the modern and the natural scenery of Oahu, Hawaii.</p>                    
-                </div>
-              </div>
-              <img className="lazyload" data-src="./assets/img/web/doahu-final.jpg" width="1200" height="624" alt="Hero"/>
-            
-            </li>
-
-            <li className="portfolio__website-container--subcontent">
-              <img alt="thumbnail" className="portfolio__website--mobile lazyload" data-src="./assets/img/web/doahu-galaxyS7_mockup.jpg" width="800" height="800"/>
-            </li>
-
-            <li className="portfolio__website-container--link">
-              <span className="portfolio__link"><a href="http://tessellationdesign.com/IMD211/doahu/" target="blank" rel="noopener noreferrer">Visit Website =></a></span>
-            </li>
-          </ul>
-        </div>
-      </div>        
+      <MyWetPaint />
+      <Doahu />
 
       <div className="portfolio">
         <h2>Retail Apocalpyse</h2>

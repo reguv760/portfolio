@@ -42,6 +42,17 @@ TABLET::: */
     		display:flex;
    		}
 
+   		.portfolio
+   		{
+   			&__website-container
+   			{
+   				&--subcontent
+   				{
+   					width:30%;
+   				}
+   			}
+   		}
+
 
 	   	& .pagefooter
 	    {

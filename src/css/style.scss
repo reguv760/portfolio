@@ -11,13 +11,13 @@
 /* page layouts */
 @import 'base/layout.scss';
 @import 'base/global.scss'; /* this is the master scss for RG site */
-/* @import 'base/_global.css'; */
 
 /* modules */
 @import 'modules/sidebarNav.scss';
 @import 'modules/mobileNav.scss';
 @import 'modules/pageContainer.scss';
 @import 'modules/pagination.scss';
+@import 'modules/portfolio.scss';
 @import 'modules/pageFooter.scss';
 
 @import 'base/mediaquery.scss';
