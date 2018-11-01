@@ -1,64 +1,47 @@
 /* ============== Mobile First Media Queries ====== */
 
-@media only screen and (max-width: 480px) 
-{
-
+@media only screen and (max-width: 480px) {
 }
-
 
 /* only display if browser width is less than 
 TABLET::: */
-@media only screen and (max-width: 799px)
-{
-	.sidebar 
-	{
-		display:none;
-	}
+@media only screen and (max-width: 799px) {
+  .sidebar {
+    display: none;
+  }
 
+  & .mobileNav {
+    display: flex;
 
-	& .mobileNav
-	{
-		display: flex;
+    &__logo {
+      height: 12.5rem;
+      width: 15rem;
+    }
+  }
 
-		&__logo
-		{
-      height:12.5rem;
-      width:15rem;        
-		}
-	}
-
-	.mainContainer
-	{
-		grid-template-columns: 100%;
+  .mainContainer {
+    grid-template-columns: 100%;
     grid-template-rows: 15rem 1fr;
     grid-template-areas:
-      "mobileNav  mobileNav   mobileNav   mobileNav"
-      "rightCol   rightCol  rightCol  rightCol";
+      'mobileNav  mobileNav   mobileNav   mobileNav'
+      'rightCol   rightCol  rightCol  rightCol';
 
-    & .container 
-  	{
-   		& .header
-   		{
-    		display:flex;
-   		}
+    & .container {
+      & header {
+        display: flex;
+      }
 
-   		.portfolio
-   		{
-   			&__website-container
-   			{
-   				&--subcontent
-   				{
-   					width:30%;
-   				}
-   			}
-   		}
+      .portfolio {
+        &__website-container {
+          &--subcontent {
+            width: 30%;
+          }
+        }
+      }
 
-
-	   	& .pagefooter
-	    {
-	      display:flex;
-	    }
-   	}
-
-	}
+      & .pagefooter {
+        display: flex;
+      }
+    }
+  }
 }
