@@ -2,13 +2,13 @@ import React from 'react'
 //import Img from 'gatsby-image'
 //import { graphql } from 'gatsby'
 //import { Link } from 'gatsby'
-import doahuFinal from './../img/web/doahu-final.jpg'
-import doahuMobile from './../img/web/doahu-galaxyS7_mockup.jpg'
+import RAFinal from './../img/web/rapocalypse-final.jpg'
+import RAThumb from './../img/web/rapocalypse-iPadPro.jpg'
 
 //button
 import WebLink from './../components/WebLink'
 
-const Doahu = () => (
+const RetailApocalypse = () => (
 	<div className="portfolio">
 		<h2>Destination: Oahu</h2>
 		<div className="portfolio__website">
@@ -19,37 +19,31 @@ const Doahu = () => (
 					<div className="portfolio__overlay">
 						<div className="portfolio__overlay-container">
 							<p>
-								Travel website promoting both the modern and the
-								natural scenery of Oahu, Hawaii.
+								Showcase and listings of past and present retail
+								store closures.
 							</p>
 						</div>
 					</div>
-					<img
-						src={doahuFinal}
-						width="1200"
-						height="624"
-						alt="Hero"
-					/>
+					<img src={RAFinal} width="1200" height="624" alt="Hero" />
 				</li>
 
 				<li className="portfolio__website-container--subcontent">
 					<img
 						alt="thumbnail"
-						src={doahuMobile}
-						className="portfolio__website--mobile"
-						width="800"
-						height="800"
+						src={RAThumb}
+						width="900"
+						height="600"
 					/>
 				</li>
 				<li className="portfolio__website-container--link">
-					<WebLink link="http://tessellationdesign.com/IMD211/doahu/" />
+					<WebLink link="https://reguv760.github.io/team-03/" />
 				</li>
 			</ul>
 		</div>
 	</div>
 )
 
-export default Doahu
+export default RetailApocalypse
 
 //create graphql as a const
 //to search for images + thumbnails

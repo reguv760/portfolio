@@ -1,65 +1,50 @@
-.mainContainer
-{
-  display:grid;
+.mainContainer {
+  display: grid;
   grid-template-columns: 20rem 1fr 1fr 1fr;
   grid-template-areas:
-    "mobileNav  mobileNav   mobileNav    mobileNav"
-    "leftCol    rightCol  rightCol     rightCol";
+    'mobileNav  mobileNav   mobileNav    mobileNav'
+    'leftCol    rightCol  rightCol     rightCol';
 
-  @mixin atSmall
-  {
+  @mixin atSmall {
     grid-template-rows: 10rem 1fr; /* match height of mobileNav__logo */
   }
 
-  & .container
-  {
-    grid-area:rightCol;
-    width:100%;
-    background-color: $off-black;;
+  & .container {
+    grid-area: rightCol;
+    width: 100%;
+    background-color: $off-black;
 
-    & header
-    {
-       display:none;
-       align-items: center;
-       width:100%;
-       min-height: 15rem;
-       background-color: $off-black;
-    }
-
-    & section
-    {
-      width:100%;
+    & header {
+      display: none;
+      align-items: center;
+      width: 100%;
+      min-height: 15rem;
       background-color: $off-black;
     }
 
-    &__header
-    {
-      display:block;
-      margin:0 0 0 2rem;
-      
-      & p
-      {
-        color:$subtleWhite;
-        font-size:2.2rem;
-        line-height: 3rem;
-        margin:2rem;
+    &__header {
+      display: block;
+      margin: 0 0 0 2rem;
 
-        @mixin atSmall
-        {
+      & p {
+        color: $subtleWhite;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin: 2rem;
+
+        @mixin atSmall {
           font-size: 1.8rem;
           line-height: 2.4rem;
         }
       }
 
-      & a
-      {
+      & a {
         text-decoration: none;
-        color:$darkGreen;
+        color: $darkGreen;
       }
 
-      & a:hover
-      {
-        color:$darkGrey;
+      & a:hover {
+        color: $darkGrey;
       }
     }
   }

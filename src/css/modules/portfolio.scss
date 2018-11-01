@@ -1,210 +1,175 @@
-.portfolio
-{
-  margin:2rem;
-  padding:0 0 2rem 0;
+.portfolio {
+  margin: 2rem;
+  padding: 0 0 2rem 0;
   background-color: $darkGrey;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   min-height: 15rem;
 
-  & h2
-  {
+  & h2 {
     font-family: 'Ubuntu Mono', monospace;
-    color:$subtleWhite;
-    font-size:2.8rem;
+    color: $subtleWhite;
+    font-size: 2.8rem;
     font-weight: 700;
     letter-spacing: 0.025em;
-    padding:1rem 2rem;
-    background-color:$subtleBlack;
+    padding: 1rem 2rem;
+    background-color: $subtleBlack;
 
-    @mixin atSmall
-    {
-      font-size:2rem;
+    @mixin atSmall {
+      font-size: 2rem;
     }
   }
 
-  & dropShadow
-  {
-    filter:drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
+  & dropShadow {
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
   }
 
   /* used for website items */
-  &__website
-  {
-    width:90%;
-    min-height:10rem;
-    margin:1rem auto;
+  &__website {
+    width: 90%;
+    min-height: 10rem;
+    margin: 1rem auto;
 
-
-    &--mobile
-    {
-      object-fit:fill;
+    &--mobile {
+      object-fit: fill;
     }
   }
 
-  &__website img
-  {
+  &__website img {
     border-radius: 0.25rem;
-    filter:drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
   }
 
-  &__website-container
-  {
-    display:flex;
+  &__website-container {
+    display: flex;
     flex-flow: row wrap;
-    justify-content:flex-start;
-    list-style-type:none;
+    justify-content: flex-start;
+    list-style-type: none;
 
-    li
-    {
-      margin:1rem;
-      padding:0;
+    li {
+      margin: 1rem;
+      padding: 0;
+      position: relative;
     }
 
     /* used by websites with hero + smaller images */
-    &--hero
-    {
-      width:100%;
-      position:relative;
+    &--hero {
+      width: 100%;
+      position: relative;
 
-      @mixin atSmall
-      {
-        width:100%;
+      @mixin atSmall {
+        width: 100%;
       }
     }
 
-    &--subcontent
-    {
-      width:20%;
+    &--subcontent {
+      width: 20%;
 
-      @mixin atSmall
-      {
-        width:35%;
+      @mixin atSmall {
+        width: 35%;
       }
 
+      &-tablet {
+        width: 40%;
 
-
-      &-tablet
-      {
-        width:40%;
-
-        @mixin atSmall
-        {
-          width:42.5%;
+        @mixin atSmall {
+          width: 42.5%;
         }
       }
     }
 
     /* used by website with one large hero image */
-    &--fullWidth
-    {
-      position:relative;
-      width:100%;
+    &--fullWidth {
+      width: 100%;
     }
   }
 
-    /* used for graphic items */
-  &__gallery
-  {
-    width:90%;
-    min-height:10rem;
-    margin:1rem auto;
+  /* used for graphic items */
+  &__gallery {
+    width: 90%;
+    min-height: 10rem;
+    margin: 1rem auto;
 
-
-    &--mobile
-    {
-      object-fit:fill;
+    &--mobile {
+      object-fit: fill;
     }
   }
 
-  &__gallery img
-  {
+  &__gallery img {
     border-radius: 0.25rem;
-    filter:drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
   }
 
   /* gallery for multiple images per project */
-  &__gallery-container
-  {
-    display:flex;
+  &__gallery-container {
+    display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    width:90%;
-    margin:2rem auto;
+    width: 90%;
+    margin: 2rem auto;
 
-    li
-    {
-      margin:1rem;
-      padding:0;  
+    li {
+      margin: 1rem;
+      padding: 0;
     }
 
     /* used by websites with hero + smaller images */
-    &--hero
-    {
-      width:100%;
+    &--hero {
+      width: 100%;
       position: relative;
 
-      @mixin atSmall
-      {
-        width:100%;
+      @mixin atSmall {
+        width: 100%;
       }
     }
 
-    @mixin atSmall
-    {
+    @mixin atSmall {
       justify-content: space-between;
     }
 
-    &--subcontent
-    {
-      width:20%;
+    &--subcontent {
+      width: 20%;
 
-      @mixin atTablet
-      {
-        width:30%;
+      @mixin atTablet {
+        width: 30%;
       }
 
-      @mixin atSmall
-      {
-        width:35%;
+      @mixin atSmall {
+        width: 35%;
       }
     }
 
-    &--link
-    {
-      position:relative;
+    &--link {
+      position: relative;
     }
 
-      /* used by website with one large hero image */
-    &--fullWidth
-    {
-      position:relative;
-      width:100%;
+    /* used by website with one large hero image */
+    &--fullWidth {
+      position: relative;
+      width: 100%;
     }
   }
 
   /* overlay */
-  &__overlay
-  {
-    width:100%;
-    height:100%;
-    background-color: rgba(0,0,0, 0.8);
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:100;
-    display:flex;
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.15rem;
 
-    &-container
-    {
-      display:flex;
+    &-container {
+      display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      margin:0 auto;
-      transform: scaleX(0);
+      margin: 0 auto;
+      // transform: scaleX(0);
       position: relative;
 
       /*& h3
@@ -215,59 +180,48 @@
         margin:0 0 2rem 0;
       }*/
 
-      & p
-      {
+      & p {
         position: relative;
-        top:0;
-        font-size:2.1rem;
+        top: 0;
+        font-size: 2.1rem;
         font-weight: 500;
         line-height: 2.4rem;
-        color:$off-white;
-        padding:0 5rem;
-        
-        @mixin atTablet
-        {
-          font-size:1.8rem;
-          line-height: 2.1rem; 
-          padding:0 3.5rem;
+        color: $off-white;
+        padding: 0 5rem;
+
+        @mixin atTablet {
+          font-size: 1.8rem;
+          line-height: 2.1rem;
+          padding: 0 3.5rem;
         }
 
-        @mixin atSmall
-        {
-          font-size:1.4rem;
-          line-height:1.75rem;
-          padding:0 2.5rem;
+        @mixin atSmall {
+          font-size: 1.4rem;
+          line-height: 1.75rem;
+          padding: 0 2.5rem;
         }
       }
     }
   }
 
-  &__link
-  {
-    cursor: pointer;
-    position:relative;
-    top:0.75rem; /* to adjust link inside of --hero */
-
-    & a
-    {
-      color:$off-white;
-      font-size:1.4rem;
+  &__link {
+    & a {
+      color: $off-white;
+      font-size: 1.4rem;
       font-weight: 500;
       text-decoration: none;
       letter-spacing: 0.025em;
-      padding:0.75rem;
+      padding: 0.75rem;
       background-color: $darkGreen;
       border-radius: 0.5rem;
 
-      @mixin atSmall
-      {
-        font-size:1.3rem;
+      @mixin atSmall {
+        font-size: 1.3rem;
       }
     }
 
-    & a:hover
-    {
-      background-color:$neonGreen;
+    & a:hover {
+      background-color: $neonGreen;
     }
-  }  
+  }
 }
