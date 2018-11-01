@@ -1,6 +1,16 @@
 /* ============== Mobile First Media Queries ====== */
 
 @media only screen and (max-width: 480px) {
+  .mainContainer {
+    grid-template-rows: 10rem 1fr; /* match height of mobileNav__logo */
+
+    & .container {
+      &__header p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
 }
 
 /* only display if browser width is less than 

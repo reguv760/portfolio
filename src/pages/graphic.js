@@ -1,11 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 //import { Link } from 'gatsby'
-
-import Layout from './../components/layout'
 //import Image from '../components/image'
 
-//import Header from '../components/header'
+import Layout from './../components/layout'
 import Sidebar from './../components/Sidebar'
 import MobileNav from './../components/MobileNav'
 import PageContainer from './../components/PageContainer'
@@ -16,40 +14,28 @@ import Pagination from './../components/Pagination'
 import PageFooter from './../components/PageFooter'
 
 //projects
-import MyWetPaint from './../projects/MyWetPaint'
-import Doahu from './../projects/Doahu'
-import RetailApocalypse from './../projects/RetailApocalypse'
-import FauxRealNews from './../projects/FauxRealNews'
-import Highground from './../projects/Highground'
+//import MyWetPaint from './../projects/MyWetPaint'
 
+//styled component for page structure
+//used once
 const MainSection = styled.section`
 	width: 100%;
 	background-color: #0f0f0f;
 `
 
-//this is the structure for index.html (or root directory)
-//template this structure for other pages
-const IndexPage = () => (
+//this is the structure for /graphic
+const GraphicPage = () => (
 	<Layout>
 		<div className="mainContainer">
 			<Sidebar />
 			<MobileNav />
 			<PageContainer name="container">
 				<ContainerHeader />
-
 				<Pagination />
 
 				{/* below is the meat of the structure */}
-				<MainSection>
-					<MyWetPaint />
-					<Doahu />
-					<RetailApocalypse />
-					<FauxRealNews />
-					<Highground />
-				</MainSection>
-
+				<MainSection>{/* add projects here */}</MainSection>
 				<Pagination />
-
 				{/* only visible < Tablet res */}
 				<PageFooter />
 			</PageContainer>
@@ -58,4 +44,4 @@ const IndexPage = () => (
 	</Layout>
 )
 
-export default IndexPage
+export default GraphicPage
