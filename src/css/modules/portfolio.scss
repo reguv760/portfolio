@@ -91,6 +91,7 @@
     justify-content: flex-start;
     width: 90%;
     margin: 2rem auto;
+    list-style-type: none;
 
     li {
       margin: 1rem;
@@ -101,26 +102,10 @@
     &--hero {
       width: 100%;
       position: relative;
-
-      @mixin atSmall {
-        width: 100%;
-      }
-    }
-
-    @mixin atSmall {
-      justify-content: space-between;
     }
 
     &--subcontent {
       width: 20%;
-
-      @mixin atTablet {
-        width: 30%;
-      }
-
-      @mixin atSmall {
-        width: 35%;
-      }
     }
 
     &--link {
@@ -178,12 +163,6 @@
           line-height: 2.1rem;
           padding: 0 3.5rem;
         }
-
-        @mixin atSmall {
-          font-size: 1.4rem;
-          line-height: 1.75rem;
-          padding: 0 2.5rem;
-        }
       }
     }
   }
@@ -198,10 +177,6 @@
       padding: 0.75rem;
       background-color: $darkGreen;
       border-radius: 0.5rem;
-
-      @mixin atSmall {
-        font-size: 1.3rem;
-      }
     }
 
     & a:hover {

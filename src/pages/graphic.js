@@ -14,7 +14,8 @@ import Pagination from './../components/Pagination'
 import PageFooter from './../components/PageFooter'
 
 //projects
-//import MyWetPaint from './../projects/MyWetPaint'
+import RavenwolfLogo from './../projects/Ravenwolf'
+import SetaLogo from './../projects/Seta'
 
 //styled component for page structure
 //used once
@@ -31,11 +32,20 @@ const GraphicPage = () => (
 			<MobileNav />
 			<PageContainer name="container">
 				<ContainerHeader />
-				<Pagination />
+
+				<MainSection>
+					<Pagination />
+				</MainSection>
 
 				{/* below is the meat of the structure */}
-				<MainSection>{/* add projects here */}</MainSection>
-				<Pagination />
+				<MainSection>
+					<RavenwolfLogo />
+					<SetaLogo />
+				</MainSection>
+
+				<MainSection>
+					<Pagination />
+				</MainSection>
 				{/* only visible < Tablet res */}
 				<PageFooter />
 			</PageContainer>

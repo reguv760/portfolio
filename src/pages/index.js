@@ -40,7 +40,9 @@ const IndexPage = () => (
 			<PageContainer name="container">
 				<ContainerHeader />
 
-				<Pagination />
+				<MainSection>
+					<Pagination />
+				</MainSection>
 
 				{/* below is the meat of the structure */}
 				<MainSection>
@@ -51,7 +53,9 @@ const IndexPage = () => (
 					<Highground />
 				</MainSection>
 
-				<Pagination />
+				<MainSection>
+					<Pagination />
+				</MainSection>
 
 				{/* only visible < Tablet res */}
 				<PageFooter />

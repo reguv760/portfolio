@@ -28,14 +28,19 @@ const NotFoundPage = () => (
 			<MobileNav />
 			<PageContainer name="container">
 				<ContainerHeader />
-				<Pagination />
+
+				<MainSection>
+					<Pagination />
+				</MainSection>
 
 				{/* below is the meat of the structure */}
 				<MainSection>
 					<h2>Page not found!</h2>
 				</MainSection>
 
-				<Pagination />
+				<MainSection>
+					<Pagination />
+				</MainSection>
 				{/* only visible < Tablet res */}
 				<PageFooter />
 			</PageContainer>
