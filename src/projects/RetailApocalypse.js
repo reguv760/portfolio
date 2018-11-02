@@ -18,8 +18,9 @@ const RetailApocalypse = () => (
 
 					<div className="portfolio__overlay">
 						<div className="portfolio__overlay-container">
-							<p>
-								Showcase and listings of past and present retail store closures.
+							<p className="portfolio__overlay-text">
+								Showcase and listings of past and present retail
+								store closures.
 							</p>
 						</div>
 					</div>
@@ -27,7 +28,12 @@ const RetailApocalypse = () => (
 				</li>
 
 				<li className="portfolio__website-container--subcontent">
-					<img alt="thumbnail" src={RAThumb} width="900" height="600" />
+					<img
+						alt="thumbnail"
+						src={RAThumb}
+						width="900"
+						height="600"
+					/>
 				</li>
 				<li className="portfolio__website-container--link">
 					<WebLink link="https://reguv760.github.io/team-03/" />

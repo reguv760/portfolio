@@ -14,7 +14,9 @@ const Ravenwolf = () => (
 				<li className="portfolio__gallery-container--hero">
 					<div className="portfolio__overlay">
 						<div className="portfolio__overlay-container">
-							<p>Logo Designs for Adventure Gear startup</p>
+							<p className="portfolio__overlay-text">
+								Logo Designs for Adventure Gear startup
+							</p>
 						</div>
 					</div>
 					<img

@@ -17,7 +17,7 @@ const Highground = () => (
 
 					<div className="portfolio__overlay">
 						<div className="portfolio__overlay-container">
-							<p>
+							<p className="portfolio__overlay-text">
 								Website for award winning Independent
 								documentary.
 							</p>

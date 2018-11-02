@@ -15,7 +15,7 @@ const Seta = () => (
 				<li className="portfolio__gallery-container--hero">
 					<div className="portfolio__overlay">
 						<div className="portfolio__overlay-container">
-							<p>
+							<p className="portfolio__overlay-text">
 								Final logo design for upscale restaurant in
 								Whittier, CA
 							</p>

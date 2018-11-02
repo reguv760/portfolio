@@ -18,18 +18,13 @@ const Doahu = () => (
 
 					<div className="portfolio__overlay">
 						<div className="portfolio__overlay-container">
-							<p>
-								Travel website promoting both the modern and the
-								natural scenery of Oahu, Hawaii.
+							<p className="portfolio__overlay-text">
+								Travel website promoting both the modern and the natural scenery
+								of Oahu, Hawaii.
 							</p>
 						</div>
 					</div>
-					<img
-						src={doahuFinal}
-						width="1200"
-						height="624"
-						alt="Hero"
-					/>
+					<img src={doahuFinal} width="1200" height="624" alt="Hero" />
 				</li>
 
 				<li className="portfolio__website-container--subcontent">

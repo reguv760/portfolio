@@ -41,6 +41,7 @@ const NotFoundPage = () => (
 				<MainSection>
 					<Pagination />
 				</MainSection>
+
 				{/* only visible < Tablet res */}
 				<PageFooter />
 			</PageContainer>

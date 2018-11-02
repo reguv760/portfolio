@@ -18,7 +18,9 @@ const MyWetPaint = () => (
 
 					<div className="portfolio__overlay">
 						<div className="portfolio__overlay-container">
-							<p>Portfolio for Los Angeles based fine artist.</p>
+							<p className="portfolio__overlay-text">
+								Portfolio for Los Angeles based fine artist.
+							</p>
 						</div>
 					</div>
 
