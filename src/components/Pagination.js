@@ -6,10 +6,14 @@ const Pagination = () => (
 		<div className="pagination">
 			<ul className="pagination__container">
 				<li>
-					<Link to="/">Web</Link>
+					<Link to="/" activeClassName="active_link">
+						Web
+					</Link>
 				</li>
 				<li>
-					<Link to="/graphic">Graphic</Link>
+					<Link to="/graphic" activeClassName="active_link">
+						Graphic
+					</Link>
 				</li>
 			</ul>
 		</div>
