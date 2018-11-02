@@ -1,47 +1,62 @@
 import React from 'react'
-//import Img from 'gatsby-image'
-//import { graphql } from 'gatsby'
-//import { Link } from 'gatsby'
-import mwpHero from './../img/web/mywetpaint.jpg'
-import mwpHeroThumb from './../img/web/mywetpaint-iPhone6.jpg'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+//import mwpHero from './../img/web/mywetpaint.jpg'
+//import mwpHeroThumb from './../img/web/mywetpaint-iPhone6.jpg'
 
 //button
 import WebLink from './../components/WebLink'
 
 const MyWetPaint = () => (
-	<div className="portfolio">
-		<h2>My Wet Paint Studio</h2>
-		<div className="portfolio__website">
-			<ul className="portfolio__website-container">
-				<li className="portfolio__website-container--fullWidth">
-					{/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>  */}
+	<StaticQuery
+		query={graphql`
+			query {
+				heroImage: file(relativePath: { eq: "web/mywetpaint.jpg" }) {
+					...fluidImage
+				}
+				mobileThumbnail: file(
+					relativePath: { eq: "web/mywetpaint-iPhone6.jpg" }
+				) {
+					...fluidImage
+				}
+			}
+		`}
+		render={data => (
+			<div className="portfolio">
+				<h2>My Wet Paint Studio</h2>
+				<div className="portfolio__website">
+					<ul className="portfolio__website-container">
+						<li className="portfolio__website-container--fullWidth">
+							<div className="portfolio__overlay">
+								<div className="portfolio__overlay-container">
+									<p className="portfolio__overlay-text">
+										Portfolio for Los Angeles based fine artist.
+									</p>
+								</div>
+							</div>
 
-					<div className="portfolio__overlay">
-						<div className="portfolio__overlay-container">
-							<p className="portfolio__overlay-text">
-								Portfolio for Los Angeles based fine artist.
-							</p>
-						</div>
-					</div>
+							{/* <img src={mwpHero} width="1280" height="800" alt="Hero" /> */}
 
-					<img src={mwpHero} width="1280" height="800" alt="Hero" />
-				</li>
+							<Img
+								fluid={data.heroImage.childImageSharp.fluid}
+								alt="My Wet Paint Studio homepage"
+							/>
+						</li>
 
-				<li className="portfolio__website-container--subcontent">
-					<img
-						alt="thumbnail"
-						src={mwpHeroThumb}
-						className="portfolio__website--mobile"
-						width="800"
-						height="800"
-					/>
-				</li>
-				<li className="portfolio__website-container--link">
-					<WebLink link="http://mywetpaintstudio.com" />
-				</li>
-			</ul>
-		</div>
-	</div>
+						<li className="portfolio__website-container--subcontent">
+							<Img
+								fluid={data.mobileThumbnail.childImageSharp.fluid}
+								alt="thumbnail"
+							/>
+						</li>
+						<li className="portfolio__website-container--link">
+							<WebLink link="http://mywetpaintstudio.com" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		)}
+	/>
 )
 
 export default MyWetPaint

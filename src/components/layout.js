@@ -4,12 +4,19 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 //import Header from './header'
-import 'normalize.css';
+import 'normalize.css'
 import './../css/style.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
+      fragment fluidImage on File {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       query SiteTitleQuery {
         site {
           siteMetadata {
@@ -30,10 +37,8 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
 
-        { /* <Header siteTitle={data.site.siteMetadata.title} /> */ }
-        <div>
-          {children}
-        </div>
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <div>{children}</div>
       </>
     )}
   />

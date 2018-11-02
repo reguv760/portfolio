@@ -1,46 +1,63 @@
 import React from 'react'
-//import Img from 'gatsby-image'
-//import { graphql } from 'gatsby'
-//import { Link } from 'gatsby'
-import RAFinal from './../img/web/rapocalypse-final.jpg'
-import RAThumb from './../img/web/rapocalypse-iPadPro.jpg'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
+//import RAFinal from './../img/web/rapocalypse-final.jpg'
+//import RAThumb from './../img/web/rapocalypse-iPadPro.jpg'
 
 //button
 import WebLink from './../components/WebLink'
 
 const RetailApocalypse = () => (
-	<div className="portfolio">
-		<h2>Destination: Oahu</h2>
-		<div className="portfolio__website">
-			<ul className="portfolio__website-container">
-				<li className="portfolio__website-container--fullWidth">
-					{/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
+	<StaticQuery
+		query={graphql`
+			query {
+				heroImage: file(relativePath: { eq: "web/rapocalypse-final.jpg" }) {
+					...fluidImage
+				}
+				mobileThumbnail: file(
+					relativePath: { eq: "web/rapocalypse-iPadPro.jpg" }
+				) {
+					...fluidImage
+				}
+			}
+		`}
+		render={data => (
+			<div className="portfolio">
+				<h2>Retail Apocalypse</h2>
+				<div className="portfolio__website">
+					<ul className="portfolio__website-container">
+						<li className="portfolio__website-container--fullWidth">
+							{/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
 
-					<div className="portfolio__overlay">
-						<div className="portfolio__overlay-container">
-							<p className="portfolio__overlay-text">
-								Showcase and listings of past and present retail
-								store closures.
-							</p>
-						</div>
-					</div>
-					<img src={RAFinal} width="1200" height="624" alt="Hero" />
-				</li>
+							<div className="portfolio__overlay">
+								<div className="portfolio__overlay-container">
+									<p className="portfolio__overlay-text">
+										Showcase and listings of past and present retail store
+										closures.
+									</p>
+								</div>
+							</div>
+							<Img
+								fluid={data.heroImage.childImageSharp.fluid}
+								alt="Retail Apocalypse"
+							/>
+						</li>
 
-				<li className="portfolio__website-container--subcontent">
-					<img
-						alt="thumbnail"
-						src={RAThumb}
-						width="900"
-						height="600"
-					/>
-				</li>
-				<li className="portfolio__website-container--link">
-					<WebLink link="https://reguv760.github.io/team-03/" />
-				</li>
-			</ul>
-		</div>
-	</div>
+						<li className="portfolio__website-container--subcontent">
+							<Img
+								fluid={data.mobileThumbnail.childImageSharp.fluid}
+								alt="thumbnail"
+							/>
+						</li>
+						<li className="portfolio__website-container--link">
+							<WebLink link="https://reguv760.github.io/team-03/" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		)}
+	/>
 )
 
 export default RetailApocalypse
