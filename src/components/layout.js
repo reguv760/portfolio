@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -30,6 +31,22 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            {
+              name: 'description',
+              content: `Reginald Galang's 2018 Portfolio website`,
+            },
+            {
+              name: 'keywords',
+              content:
+                'Web Developer, Web Designer, Full Stack Developer, ReactJS, GatsbyJS',
+            },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
         <div>{children}</div>
       </>
     )}
