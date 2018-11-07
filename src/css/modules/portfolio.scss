@@ -6,14 +6,37 @@
   border-bottom-right-radius: 1rem;
   min-height: 15rem;
 
-  & h2 {
-    font-family: 'Ubuntu Mono', monospace;
-    color: $subtleWhite;
-    font-size: 2.8rem;
-    font-weight: 700;
-    letter-spacing: 0.025em;
+  &__headerTitle
+  {
+    display:flex;
+    flex-flow:row nowrap;
+    list-style-type:none;
+
+    margin:0;
+    width:100%;
     padding: 1rem 2rem;
     background-color: $subtleBlack;
+
+    & li 
+    {
+      width:50%;
+      margin:0;
+      padding:0;
+
+      & h2 
+      {
+        font-family: 'Ubuntu Mono', monospace;
+        color: $subtleWhite;
+        font-size: 2.8rem;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+      }
+    }
+
+    & li:last-child
+    {
+      text-align: right;
+    }
   }
 
   & dropShadow {
@@ -104,10 +127,6 @@
       width: 20%;
     }
 
-    &--link {
-      position: relative;
-    }
-
     /* used by website with one large hero image */
     &--fullWidth {
       position: relative;
@@ -134,7 +153,7 @@
       flex-flow: column nowrap;
       align-items: center;
       margin: 0 auto;
-      // transform: scaleX(0);
+      // transform: scaleX(0); this should be called by gsap
       position: relative;
     }
 

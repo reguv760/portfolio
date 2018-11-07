@@ -24,7 +24,10 @@ const FauxRealNews = () => (
 		`}
     render={data => (
       <div className="portfolio">
-        <h2>FauxRealNews</h2>
+        <ul className="portfolio__headerTitle">
+          <li><h2>FauxRealNews</h2></li>
+          <li><WebLink link="http://tessellationdesign.com/GWDA273/frn/" /></li>
+        </ul>
         <div className="portfolio__website">
           <ul className="portfolio__website-container">
             <li className="portfolio__website-container--fullWidth">
@@ -49,9 +52,6 @@ const FauxRealNews = () => (
                 fluid={data.mobileThumbnail.childImageSharp.fluid}
                 alt="thumbnail"
               />
-            </li>
-            <li className="portfolio__website-container--link">
-              <WebLink link="http://tessellationdesign.com/GWDA273/frn/" />
             </li>
           </ul>
         </div>
