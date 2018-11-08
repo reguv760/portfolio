@@ -5,6 +5,7 @@
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   min-height: 15rem;
+  position:relative;
 
   &__headerTitle
   {
@@ -36,6 +37,7 @@
     & li:last-child
     {
       text-align: right;
+      align-self:center;
     }
   }
 
