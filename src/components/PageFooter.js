@@ -4,8 +4,8 @@ import React from 'react'
 import LinkedIn from './../icons/linkedIn.png'
 import GitHub from './../icons/github.png'
 
-//animation:::
-//import portfolioAnim from './portfolioAnim'
+// animation:::
+// import portfolioAnim from './portfolioAnim'
 
 const PageFooter = () => (
   <footer className="pagefooter">
@@ -40,7 +40,8 @@ const PageFooter = () => (
         GatsbyJS
       </a>
     </p>
-    <p>Site updated: 10.26.18</p>
+
+    <p>Site updated: 11.7.18</p>
   </footer>
 )
 
