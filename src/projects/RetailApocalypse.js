@@ -44,6 +44,7 @@ const RetailApocalypse = () => (
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Retail Apocalypse"
+                className="dropShadow"
               />
             </li>
 

@@ -24,7 +24,7 @@ const Seta = () => (
     render={data => (
       <div className="portfolio">
         <ul className="portfolio__headerTitle">
-          <li><h2>Seta: Restaurant</h2></li>
+          <li className="graphic"><h2>Seta: Restaurant</h2></li>
         </ul>
         <div className="portfolio__gallery">
           <ul className="portfolio__gallery-container">
@@ -39,6 +39,7 @@ const Seta = () => (
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Seta logo"
+                className="dropShadow"
               />
             </li>
             <li className="portfolio__gallery-container--subcontent">

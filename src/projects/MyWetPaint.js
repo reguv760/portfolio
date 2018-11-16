@@ -43,6 +43,7 @@ const MyWetPaint = () => (
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="My Wet Paint Studio homepage"
+                className="dropShadow"
               />
             </li>
 

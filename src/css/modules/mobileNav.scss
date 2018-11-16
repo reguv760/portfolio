@@ -2,11 +2,12 @@
   display: none;
   flex-flow: row nowrap;
   grid-area: mobileNav;
-  background-color: $off-black;
+  background-color: $off-white;
   justify-content: space-around;
   position: fixed;
   z-index: 1000;
   width: 100%;
+  height:15rem;
 
   &__logo {
     height: 15rem;
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:0.2rem;
 
     & img {
       padding: 1rem;
