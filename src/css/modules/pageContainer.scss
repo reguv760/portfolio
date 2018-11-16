@@ -8,14 +8,14 @@
   & .container {
     grid-area: rightCol;
     width: 100%;
-    background-color: $off-black;
+    background-color: $off-white;
 
     & header {
       display: none;
       align-items: center;
       width: 100%;
       min-height: 15rem;
-      background-color: $off-black;
+      background-color: $off-white;
     }
 
     //ContainerHeader.js
@@ -24,7 +24,7 @@
       margin: 0 0 0 2rem;
 
       & p {
-        color: $subtleWhite;
+        color: $off-black;
         font-size: 2.2rem;
         line-height: 3rem;
         margin: 2rem;

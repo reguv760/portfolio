@@ -44,6 +44,7 @@ const FauxRealNews = () => (
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="FauxRealNews"
+                className="dropShadow"
               />
             </li>
 

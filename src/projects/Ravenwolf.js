@@ -25,7 +25,7 @@ const Ravenwolf = () => (
       <div className="portfolio">
 
         <ul className="portfolio__headerTitle">
-          <li><h2>Ravenwolf: Adventure Gear</h2></li>
+          <li className="graphic"><h2>Ravenwolf: Adventure Gear</h2></li>
         </ul>
 
         <div className="portfolio__gallery">
@@ -41,6 +41,7 @@ const Ravenwolf = () => (
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="RavenWolf Logo"
+                className="dropShadow"
               />
             </li>
             <li className="portfolio__gallery-container--subcontent">

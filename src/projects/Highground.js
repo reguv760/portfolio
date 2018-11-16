@@ -37,6 +37,7 @@ const Highground = () => (
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Highground"
+                className="dropShadow"
               />
             </li>
           </ul>

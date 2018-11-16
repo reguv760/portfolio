@@ -15,6 +15,7 @@ const Doahu = () => (
 			query {
 				heroImage: file(relativePath: { eq: "web/doahu-final.jpg" }) {
 					...fluidImage
+          
 				}
 				mobileThumbnail: file(
 					relativePath: { eq: "web/doahu-galaxyS7_mockup.jpg" }
@@ -44,6 +45,7 @@ const Doahu = () => (
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Destination: Oahu"
+                className="dropShadow"
               />
             </li>
 

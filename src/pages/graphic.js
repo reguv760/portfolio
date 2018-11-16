@@ -9,25 +9,25 @@ import MobileNav from './../components/MobileNav'
 import PageContainer from './../components/PageContainer'
 import ContainerHeader from './../components/ContainerHeader'
 
-//page structure:::
+// page structure:::
 import Pagination from './../components/Pagination'
 import PageFooter from './../components/PageFooter'
 
-//projects
+// projects
 import RavenwolfLogo from './../projects/Ravenwolf'
 import SetaLogo from './../projects/Seta'
 
-//styled component for page structure
-//used once
+// styled component for page structure
+// used once
 const MainSection = styled.section`
 	width: 100%;
-	background-color: #0f0f0f;
+	background-color: #efefef;
 `
 
-//this is the structure for /graphic
+// this is the structure for /graphic
 const GraphicPage = () => (
-	<StaticQuery
-		query={graphql`
+  <StaticQuery
+    query={graphql`
 			query gdTitleQuery {
 				site {
 					siteMetadata {
@@ -36,36 +36,36 @@ const GraphicPage = () => (
 				}
 			}
 		`}
-		render={data => (
-			<Layout>
-				<Helmet title={data.site.siteMetadata.title + ' : graphic design'} />
-				<div className="mainContainer">
-					<Sidebar />
-					<MobileNav />
-					<PageContainer name="container">
-						<ContainerHeader />
+    render={data => (
+      <Layout>
+        <Helmet title={data.site.siteMetadata.title + ' : graphic design'} />
+        <div className="mainContainer">
+          <Sidebar />
+          <MobileNav />
+          <PageContainer name="container">
+            <ContainerHeader />
 
-						<MainSection>
-							<Pagination />
-						</MainSection>
+            <MainSection>
+              <Pagination />
+            </MainSection>
 
-						{/* below is the meat of the structure */}
-						<MainSection>
-							<RavenwolfLogo />
-							<SetaLogo />
-						</MainSection>
+            {/* below is the meat of the structure */}
+            <MainSection>
+              <RavenwolfLogo />
+              <SetaLogo />
+            </MainSection>
 
-						<MainSection>
-							<Pagination />
-						</MainSection>
-						{/* only visible < Tablet res */}
-						<PageFooter />
-					</PageContainer>
-					{/*  <Link to="/page-2/">Go to page 2</Link> */}
-				</div>
-			</Layout>
-		)}
-	/>
+            <MainSection>
+              <Pagination />
+            </MainSection>
+            {/* only visible < Tablet res */}
+            <PageFooter />
+          </PageContainer>
+          {/*  <Link to="/page-2/">Go to page 2</Link> */}
+        </div>
+      </Layout>
+    )}
+  />
 )
 
 export default GraphicPage
