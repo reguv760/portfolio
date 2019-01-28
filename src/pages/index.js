@@ -19,6 +19,7 @@ import PageFooter from './../components/PageFooter'
 
 // projects
 import MyWetPaint from './../projects/MyWetPaint'
+import Rocknbox from './../projects/Rocknbox'
 import Doahu from './../projects/Doahu'
 import RetailApocalypse from './../projects/RetailApocalypse'
 import FauxRealNews from './../projects/FauxRealNews'
@@ -62,6 +63,7 @@ const IndexPage = () => (
             {/* below is the meat of the structure */}
             <MainSection>
               <MyWetPaint />
+              <Rocknbox />
               <Doahu />
               <RetailApocalypse />
               <FauxRealNews />
