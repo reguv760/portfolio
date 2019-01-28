@@ -74,7 +74,7 @@ const Sidebar = () => (
             GatsbyJS
           </a>
         </p>
-        <p>Site updated: 11.15.18</p>
+        <p>Site updated: 1.28.19</p>
       </div>
     </div>
   </aside>
