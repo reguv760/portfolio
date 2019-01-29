@@ -6,12 +6,12 @@ const Pagination = () => (
 		<div className="pagination">
 			<ul className="pagination__container">
 				<li>
-					<Link to="/" activeClassName="active_link">
+					<Link to="/" activeStyle={{color: '#33cf33'}}>
 						Web
 					</Link>
 				</li>
 				<li>
-					<Link to="/graphic" activeClassName="active_link">
+					<Link to="/graphic" activeStyle={{color: '#33cf33'}}>
 						Graphic
 					</Link>
 				</li>

@@ -7,6 +7,7 @@ import GitHub from './../icons/github.png'
 
 import Resume from './../ReginaldGalang-resume.pdf'
 
+
 const Sidebar = () => (
   <aside className="sidebar">
     <div className="sidebar__logo">
@@ -16,8 +17,14 @@ const Sidebar = () => (
     <nav>
       <ul className="sidebar__nav">
         <li>
-          <Link to="/" className="active_link">
+          <Link to="/" activeStyle={{color: '#33cf33'}}>
             Projects
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/about" activeStyle={{color: '#33cf33'}}>
+            About Me
           </Link>
         </li>
         <li>
@@ -25,6 +32,7 @@ const Sidebar = () => (
             R&eacute;sum&eacute;
           </a>
         </li>
+
       </ul>
     </nav>
 
