@@ -2,16 +2,17 @@
   display: none;
   flex-flow: row nowrap;
   grid-area: mobileNav;
-  background-color: $off-white;
+  background-color: $transWhite;
   justify-content: space-around;
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height:15rem;
+  height: 15rem;
 
   &__logo {
     height: 15rem;
     width: 18rem;
+
     /* background-color:$off-black; */
     display: flex;
     justify-content: center;
@@ -50,6 +51,7 @@
       text-align: center;
     }
 
+
     & li object,
     & li img {
       width: 6rem;
@@ -57,8 +59,8 @@
       margin:0 auto;
     }
 
-    & .active_link p {
-      color: $neonGreen;
+    & li p.active_mobileLink {
+      //color: $neonGreen;
     }
   }
 

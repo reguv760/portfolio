@@ -8,6 +8,10 @@ import ResumeIcon from './../icons/resume.svg'
 
 import Resume from './../ReginaldGalang-resume.pdf'
 
+const activeStyle = {
+  color: '33cf33',
+}
+
 const MobileNav = () => (
 	<nav className="mobileNav">
 		<div className="mobileNav__logo">
@@ -16,7 +20,7 @@ const MobileNav = () => (
 
 		<ul className="mobileNav__links">
 			<li>
-				<Link to="/" activeStyle={{color: '#33cf33'}}>
+				<Link to="/" activeStyle={activeStyle}>
 					<img src={PortfolioIcon} alt="Web Mobile Icon" />
 					<p>Web</p>
 				</Link>
@@ -24,14 +28,14 @@ const MobileNav = () => (
 
 
 			<li>
-				<Link to="/graphic" activeStyle={{color: '#33cf33'}}>
+				<Link to="/graphic" activeStyle={activeStyle}>
 					<img src={PortfolioIcon} alt="Graphic Design Mobile Icon" />
 					<p>Graphic Design</p>
 				</Link>
 			</li>
 
 			<li>
-				<Link to="/about" activeStyle={{color: '#33cf33'}}>
+				<Link to="/about" activeStyle={activeStyle}>
 					<img src={ProfileIcon} alt="Profile Mobile Icon" />
 					<p>About Me</p>
 				</Link>
