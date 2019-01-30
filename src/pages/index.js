@@ -56,10 +56,6 @@ const IndexPage = () => (
           <PageContainer name="container">
             <ContainerHeader />
 
-            <MainSection>
-              <Pagination />
-            </MainSection>
-
             {/* below is the meat of the structure */}
             <MainSection>
               <MyWetPaint />
@@ -68,10 +64,6 @@ const IndexPage = () => (
               <RetailApocalypse />
               <FauxRealNews />
               <Highground />
-            </MainSection>
-
-            <MainSection>
-              <Pagination />
             </MainSection>
 
             {/* only visible < Tablet res */}

@@ -67,7 +67,7 @@ TABLET::: */
       height:10rem;
 
       &__logo {
-        width: 12rem;
+        width: 10rem;
         height: 10rem;
       }
 
@@ -75,11 +75,11 @@ TABLET::: */
         flex-flow: row nowrap;
         justify-content: space-around;
         margin: 0 auto;
-        width: 60%;
+        width: 75%;
 
         & li img {
-          width: 4.5rem;
-          height: 4.5rem;
+          width: 4rem;
+          height: 4rem;
         }
       }
 
@@ -88,11 +88,11 @@ TABLET::: */
       }
     }
 
-    & .pagination {
-      &__container {
-        font-size: 2.4rem;
-      }
-    }
+    // & .pagination {
+    //   &__container {
+    //     font-size: 2.4rem;
+    //   }
+    // }
 
     & .container {
       //container header::
@@ -127,13 +127,18 @@ TABLET::: */
           }
 
           &--subcontent {
-            width: 35%;
+            width: 25%;
+
+            & img 
+            {
+              width:25%;
+            }
           }
         }
 
         &__overlay {
           &-text {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             line-height: 2rem;
             padding: 0 2.5rem;
           }

@@ -18,7 +18,13 @@ const Sidebar = () => (
       <ul className="sidebar__nav">
         <li>
           <Link to="/" activeStyle={{color: '#33cf33'}}>
-            Projects
+            Web
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/graphic" activeStyle={{color: '#33cf33'}}>
+            Graphic Design
           </Link>
         </li>
 

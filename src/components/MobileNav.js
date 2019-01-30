@@ -17,8 +17,16 @@ const MobileNav = () => (
 		<ul className="mobileNav__links">
 			<li>
 				<Link to="/" activeStyle={{color: '#33cf33'}}>
-					<img src={PortfolioIcon} alt="Portfolio Mobile Icon" />
-					<p>Projects</p>
+					<img src={PortfolioIcon} alt="Web Mobile Icon" />
+					<p>Web</p>
+				</Link>
+			</li>
+
+
+			<li>
+				<Link to="/graphic" activeStyle={{color: '#33cf33'}}>
+					<img src={PortfolioIcon} alt="Graphic Design Mobile Icon" />
+					<p>Graphic Design</p>
 				</Link>
 			</li>
 

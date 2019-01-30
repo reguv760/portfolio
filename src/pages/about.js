@@ -26,10 +26,10 @@ const MainSection = styled.section`
 
 // this is the structure for index.html (or root directory)
 // template this structure for other pages
-const IndexPage = () => (
+const AboutPage = () => (
   <StaticQuery
     query={graphql`
-			query indexTitleQuery {
+			query aboutTitleQuery {
 				site {
 					siteMetadata {
 						title
@@ -44,7 +44,7 @@ const IndexPage = () => (
         <div className="mainContainer">
           <Sidebar />
 
-          {/* only visible when < Tabket */}
+          {/* only visible when < Tablet */}
           <MobileNav />
 
           <PageContainer name="container">
@@ -73,4 +73,4 @@ const IndexPage = () => (
   />
 )
 
-export default IndexPage
+export default AboutPage
