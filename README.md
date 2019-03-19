@@ -15,7 +15,7 @@
     Download package then run npm install to install dependencies.
 
     ```sh
-    npm install 
+    npm install
     ```
 
 2.  **Run Gatsby Portfolio Site**
@@ -25,7 +25,7 @@
     ```sh
     npm install -g gatsby-cli
     ```
-    
+
     Inside folder, load site in local default browser by typing:
 
     ```sh
@@ -42,20 +42,18 @@
 
 4.  **Build and Deploy to GitHub**
 
-    gh-pages devDependency will be used to deploy to your GitHub repo as a gh-pages branch.
+    `gh-pages` devDependency will be used to deploy to your GitHub repo as a gh-pages branch.
 
-    This requires that you stop local server and run the following: 
-    
+    This requires that you stop local server and run the following:
+
     ```sh
     npm run deploy
     ```
 
-    Portfolio site will be built as `public/` folder then automatically pushed to your GitHub repo. 
+    Portfolio site will be built as `public/` folder then automatically pushed to your GitHub repo.
 
-    *Note: make sure repo settings is configured properly*
+    _Note: make sure repo settings is configured properly_
 
     `Under Settings > GitHub Pages > Source`
 
     Make sure Source points to `gh-pages branch`
-
-    

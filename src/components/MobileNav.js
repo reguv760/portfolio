@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import RGlogo from './../icons/rg-logo.png'
+import WebIcon from './../icons/web.svg'
 import PortfolioIcon from './../icons/portfolio.svg'
 import ProfileIcon from './../icons/profile.svg'
 import ResumeIcon from './../icons/resume.svg'
@@ -21,7 +22,7 @@ const MobileNav = () => (
 		<ul className="mobileNav__links">
 			<li>
 				<Link to="/" activeStyle={activeStyle}>
-					<img src={PortfolioIcon} alt="Web Mobile Icon" />
+					<img src={WebIcon} alt="Web Mobile Icon" />
 					<p>Web</p>
 				</Link>
 			</li>

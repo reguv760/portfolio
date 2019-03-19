@@ -46,11 +46,13 @@ const IndexPage = () => (
 		`}
     render={data => (
       <Layout>
-        <Helmet title={data.site.siteMetadata.title} />
+        <Helmet title={data.site.siteMetadata.title}>
+          <meta name="google-site-verification" content="uEMwi9Dm-wa-RyYWqVlbPlAd1vXDIX3WDjImWBioXQU" />
+        </Helmet>
         <div className="mainContainer">
-          <Sidebar />
+            <Sidebar />          
 
-          {/* only visible when < Tabket */}
+          {/* only visible when < Tablet */}
           <MobileNav />
 
           <PageContainer name="container">
