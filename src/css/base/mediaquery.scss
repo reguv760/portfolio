@@ -2,7 +2,28 @@
 /* start from large > small display width */
 /* only display if browser width is less than 
 
-TABLET::: */
+DESKTOP::: */
+@media only screen and (max-width: 992px) {
+  .mainContainer {
+    & .container {
+      & .portfolio {
+        /*about me*/
+
+        &__aboutMe {
+          & .row {
+            flex-flow: row wrap;
+
+            & .col {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* TABLET::: */
 @media only screen and (max-width: 799px) {
   .sidebar {
     display: none;
@@ -47,18 +68,6 @@ TABLET::: */
             font-size: 1.6rem;
             line-height: 2.1rem;
             padding: 0 3.5rem;
-          }
-        }
-
-        /*about me*/
-
-        &__aboutMe {
-          & .row {
-            flex-flow: row wrap;
-
-            & .col {
-              width: 100%;
-            }
           }
         }
       }

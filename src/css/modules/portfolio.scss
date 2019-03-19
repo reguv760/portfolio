@@ -170,7 +170,7 @@
       top: 0;
       font-size: 2.1rem;
       font-weight: 500;
-      line-height: 2.4rem;
+      line-height: 2.8rem;
       color: $off-white;
       padding: 0 5rem;
     }
@@ -195,11 +195,16 @@
 
   /* about me */
   &__aboutMe {
+    min-height: 88vh;
     & .row {
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
       padding: 2rem;
+
+      & .col.img {
+        background-color: transparent;
+      }
 
       & .col {
         width: 50%;
@@ -214,10 +219,6 @@
           line-height: 1.6em;
           font-size: 1.6rem;
         }
-      }
-
-      & .col.img {
-        background-color: transparent;
       }
     }
   }
