@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { TweenMax, Elastic } from 'gsap';
 import { Link } from 'gatsby'
 
@@ -11,8 +11,14 @@ import GitHub from './../icons/github.png'
 import Resume from './../ReginaldGalang-resume.pdf'
 
 
-class Sidebar extends React.Component
+class Sidebar extends Component
 {
+  //state = { init: false }
+
+  state = {
+    init: false,
+  }
+
   constructor(props){
     super(props);
     
@@ -22,10 +28,12 @@ class Sidebar extends React.Component
     this.sideBarTween = null;
   }
 
-  componentDidMount(){
+  componentDidMount()
+  {
   // use the node ref to create the animation
-    if (this.myElement.getClientRects() != 0)
-      TweenLite.to(this.myElement, 0.6, {delay:0.25, left:0, ease:Bounce.easeOut});
+
+      TweenLite.to(this.myElement, 0.6, {delay:0.25, left:0, ease:Bounce.easeOut });
+      this.setState({init: true});
   }
 
 

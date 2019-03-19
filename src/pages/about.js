@@ -17,7 +17,8 @@ import ContainerHeader from './../components/ContainerHeader'
 import Pagination from './../components/Pagination'
 import PageFooter from './../components/PageFooter'
 
-
+//stuff:::
+import AboutMe from "./../projects/AboutMe"
 // this defines the main section component:::
 const MainSection = styled.section`
 	width: 100%;
@@ -50,23 +51,14 @@ const AboutPage = () => (
           <PageContainer name="container">
             <ContainerHeader />
 
-           { /* <!--  <MainSection>
-              <Pagination />
-            </MainSection> --> */ }
-
-            {/* below is the meat of the structure */}
             <MainSection>
-              <h1>Hello World!</h1>
+
+              <AboutMe />
             </MainSection>
 
-           { /* <!--  <MainSection>
-              <Pagination />
-            </MainSection> --> */ }
-
-            {/* only visible < Tablet res */}
             <PageFooter />
           </PageContainer>
-          {/*  <Link to="/page-2/">Go to page 2</Link> */}
+          
         </div>
       </Layout>
     )}

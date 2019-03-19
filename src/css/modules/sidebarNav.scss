@@ -33,16 +33,14 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     color: $mediumGrey;
 
     min-height: 8rem;
     width: 100%;
+    padding-top:4rem;
+    position: relative;
 
-    position: absolute;
-    left: 0;
-    bottom: 1rem;
 
     & .socialmedia {
       display: block;
