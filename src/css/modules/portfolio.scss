@@ -47,6 +47,7 @@
     & li.graphic,
     & li.aboutMe {
       text-align: left;
+      width: 100%;
     }
   }
 
@@ -197,20 +198,22 @@
     & .row {
       display: flex;
       flex-flow: row nowrap;
-      justify-content: flex-start;
+      justify-content: center;
+      padding: 2rem;
 
-      & .col1 {
-        width: 30%;
-        min-height: 80vh;
-        background-color: #340530;
+      & .col {
+        width: 50%;
+        min-height: 25rem;
+        background-color: $mediumGrey;
         margin: 1rem;
-      }
+        padding: 1rem;
+        color: $subtleWhite;
 
-      & .col2 {
-        width: 70%;
-        min-height: 80vh;
-        background-color: #340530;
-        margin: 1rem;
+        & p {
+          color: $subtleWhite;
+          line-height: 1.6em;
+          font-size: 1.6rem;
+        }
       }
     }
   }

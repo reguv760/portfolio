@@ -12,8 +12,8 @@ TABLET::: */
     grid-template-columns: 100%;
     grid-template-rows: 15rem 1fr;
     grid-template-areas:
-      'mobileNav  mobileNav   mobileNav   mobileNav'
-      'rightCol   rightCol  rightCol  rightCol';
+      "mobileNav  mobileNav   mobileNav   mobileNav"
+      "rightCol   rightCol  rightCol  rightCol";
 
     & .mobileNav {
       display: flex;
@@ -49,6 +49,18 @@ TABLET::: */
             padding: 0 3.5rem;
           }
         }
+
+        /*about me*/
+
+        &__aboutMe {
+          & .row {
+            flex-flow: row wrap;
+
+            & .col {
+              width: 100%;
+            }
+          }
+        }
       }
 
       & .pagefooter {
@@ -64,7 +76,7 @@ TABLET::: */
 
     & .mobileNav {
       display: flex;
-      height:10rem;
+      height: 10rem;
 
       &__logo {
         width: 10rem;
@@ -129,9 +141,8 @@ TABLET::: */
           &--subcontent {
             width: 25%;
 
-            & img 
-            {
-              width:25%;
+            & img {
+              width: 25%;
             }
           }
         }
