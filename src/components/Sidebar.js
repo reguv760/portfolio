@@ -14,7 +14,9 @@ const Sidebar = () =>
   return (
    <aside className="sidebar" >
     <div className="sidebar__logo" >
+      <Link to="/">
         <img src={RGlogo} alt="RG:Reggie Galang glyph" />
+      </Link>
     </div>
 
     <nav >
@@ -94,7 +96,7 @@ const Sidebar = () =>
             GatsbyJS
           </a>
         </p>
-        <p>Site updated: 3.19.19</p>
+        <p>Site updated: 3.20.19</p>
       </div>
     </div>
   </aside>

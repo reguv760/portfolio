@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:700|Ubuntu:400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:700|Ubuntu:400,500,700");
 
 /* base CSS */
-/* @import 'base/_reset.css'; */ 
+/* @import 'base/_reset.css'; */
 
 /* variables */
 
-@import 'base/variables.scss';
+@import "base/variables.scss";
 //@import 'base/mixins.scss';
 
 /* page layouts */
-@import 'base/layout.scss';
-@import 'base/global.scss'; /* this is the master scss for RG site */
+@import "base/layout.scss";
+@import "base/global.scss"; /* this is the master scss for RG site */
 
 /* modules */
-@import 'modules/sidebarNav.scss';
-@import 'modules/mobileNav.scss';
-@import 'modules/pageContainer.scss';
-@import 'modules/pagination.scss';
-@import 'modules/portfolio.scss';
-@import 'modules/pageFooter.scss';
+@import "modules/sidebarNav.scss";
+@import "modules/mobileNav.scss";
+@import "modules/pageContainer.scss";
+@import "modules/pagination.scss";
+@import "modules/portfolio.scss";
+@import "modules/portfolioLink.scss";
+@import "modules/portfolioOverlay.scss";
+@import "modules/pageFooter.scss";
 
-@import 'base/mediaquery.scss';
+@import "base/mediaquery.scss";
 
 /* svg 
 @import 'modules/_sprite.css'; 

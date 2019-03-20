@@ -28,6 +28,11 @@ class PortfolioOverlay extends React.Component
 		{ /* <div className="portfolio__overlay"  onMouseEnter={ this.mouseEnter } onMouseLeave={ this.mouseLeave } > */ }
 	  return (    
 		<div className="portfolio__overlay" >
+
+	  	<Tween 
+			duration={ '0.5' } 
+			to={{ delay:'0.25', transform: 'scaleX(1)', ease:'Power1.easeOut' }} 
+		>
 			<div className="portfolio__overlay-container">
 				<Tween 
 					duration={ '0.5' } 
@@ -38,6 +43,7 @@ class PortfolioOverlay extends React.Component
 				  </p>
 				</Tween>
 			</div>
+		</Tween>
 		</div>
 	  )
 	}

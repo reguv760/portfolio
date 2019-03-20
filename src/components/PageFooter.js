@@ -4,9 +4,6 @@ import React from 'react'
 import LinkedIn from './../icons/linkedIn.png'
 import GitHub from './../icons/github.png'
 
-// animation:::
-// import portfolioAnim from './portfolioAnim'
-
 const PageFooter = () => (
   <footer className="pagefooter">
     {/* This is a footer area */}
@@ -41,7 +38,7 @@ const PageFooter = () => (
       </a>
     </p>
 
-    <p>Site updated: 3.19.19</p>
+    <p>Site updated: 3.20.19</p>
   </footer>
 )
 

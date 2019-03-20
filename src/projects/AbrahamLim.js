@@ -14,6 +14,11 @@ const AbrahamLim = () => (
 				heroImage: file(relativePath: { eq: "web/abrahamLim-fullSite.jpg" }) {
 					...fluidImage
 				}
+
+        mobileThumbnail: file(
+          relativePath: { eq: "web/abrahamLim_mobile-iphone8.png" }) {
+          ...fluidImage
+        }
 			}
 		`}
     render={data => (
@@ -33,6 +38,13 @@ const AbrahamLim = () => (
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Abraham Lim"
                 className="dropShadow"
+              />
+            </li>
+
+            <li className="portfolio__website-container--subcontent">
+              <Img
+                fluid={data.mobileThumbnail.childImageSharp.fluid}
+                alt="thumbnail"
               />
             </li>
           </ul>
