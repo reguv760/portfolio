@@ -2,21 +2,22 @@
   display: none;
   flex-flow: row nowrap;
   grid-area: mobileNav;
-  background-color: $off-white;
+  background-color: $transWhite;
   justify-content: space-around;
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height:15rem;
+  height: 15rem;
 
   &__logo {
     height: 15rem;
     width: 18rem;
+
     /* background-color:$off-black; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0.2rem;
+    padding: 0.2rem;
 
     & img {
       padding: 1rem;
@@ -42,20 +43,23 @@
       justify-content: center;
       margin: 0.5rem auto;
       height: 6rem;
+      width: 8rem;
     }
 
     & li p {
       color: $mediumGrey;
+      text-align: center;
     }
 
     & li object,
     & li img {
       width: 6rem;
       height: 6rem;
+      margin: 0 auto;
     }
 
-    & .active_link p {
-      color: $neonGreen;
+    & li p.active_mobileLink {
+      //color: $neonGreen;
     }
   }
 
@@ -66,6 +70,7 @@
     font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 0.0125em;
+    line-height: 1.2em;
   }
 
   & li a:hover {

@@ -45,9 +45,9 @@ const GraphicPage = () => (
           <PageContainer name="container">
             <ContainerHeader />
 
-            <MainSection>
+           { /* <MainSection>
               <Pagination />
-            </MainSection>
+            </MainSection> */ }
 
             {/* below is the meat of the structure */}
             <MainSection>
@@ -55,9 +55,10 @@ const GraphicPage = () => (
               <SetaLogo />
             </MainSection>
 
-            <MainSection>
+            { /* <MainSection>
               <Pagination />
-            </MainSection>
+            </MainSection> */ }
+            
             {/* only visible < Tablet res */}
             <PageFooter />
           </PageContainer>

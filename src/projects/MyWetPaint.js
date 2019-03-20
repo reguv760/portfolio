@@ -1,8 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-// import mwpHero from './../img/web/mywetpaint.jpg'
-// import mwpHeroThumb from './../img/web/mywetpaint-iPhone6.jpg'
+
+import PortfolioOverlay from "./../components/PortfolioOverlay"
 
 // button
 import WebLink from './../components/WebLink'
@@ -30,13 +30,8 @@ const MyWetPaint = () => (
         <div className="portfolio__website">
           <ul className="portfolio__website-container">
             <li className="portfolio__website-container--fullWidth">
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  <p className="portfolio__overlay-text">
-										Portfolio for Los Angeles based fine artist.
-                  </p>
-                </div>
-              </div>
+
+              <PortfolioOverlay>Portfolio for Los Angeles based fine artist.</PortfolioOverlay>
 
               {/* <img src={mwpHero} width="1280" height="800" alt="Hero" /> */}
 

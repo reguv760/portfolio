@@ -33,16 +33,14 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     color: $mediumGrey;
 
     min-height: 8rem;
     width: 100%;
+    padding-top:4rem;
+    position: relative;
 
-    position: absolute;
-    left: 0;
-    bottom: 1rem;
 
     & .socialmedia {
       display: block;
@@ -90,6 +88,7 @@
     position: relative;
     margin: 0 auto 1rem auto;
     width: 75%;
+    left:-18rem;
 
     & li {
       top: 0;
@@ -101,18 +100,19 @@
     & li a {
       font-family: 'Ubuntu Mono', monospace;
       color: $darkGrey;
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 500;
       text-decoration: none;
-      letter-spacing: 0.0125em;
+      letter-spacing: 0.0025em;
+      line-height:1em;
     }
 
     & li a:hover {
-      color: $darkGrey;
+      color: $mediumGrey;
     }
 
     & li a.active_link {
-      color: $neonGreen;
+      //color: $neonGreen;
     }
   }
 

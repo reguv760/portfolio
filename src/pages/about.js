@@ -17,15 +17,8 @@ import ContainerHeader from './../components/ContainerHeader'
 import Pagination from './../components/Pagination'
 import PageFooter from './../components/PageFooter'
 
-// projects
-import MyWetPaint from './../projects/MyWetPaint'
-import Rocknbox from './../projects/Rocknbox'
-import AbrahamLim from './../projects/AbrahamLim'
-import Doahu from './../projects/Doahu'
-import RetailApocalypse from './../projects/RetailApocalypse'
-import FauxRealNews from './../projects/FauxRealNews'
-import Highground from './../projects/Highground'
-
+//stuff:::
+import AboutMe from "./../projects/AboutMe"
 // this defines the main section component:::
 const MainSection = styled.section`
 	width: 100%;
@@ -34,10 +27,10 @@ const MainSection = styled.section`
 
 // this is the structure for index.html (or root directory)
 // template this structure for other pages
-const IndexPage = () => (
+const AboutPage = () => (
   <StaticQuery
     query={graphql`
-			query indexTitleQuery {
+			query aboutTitleQuery {
 				site {
 					siteMetadata {
 						title
@@ -47,11 +40,10 @@ const IndexPage = () => (
 		`}
     render={data => (
       <Layout>
-        <Helmet title={data.site.siteMetadata.title}>
-          <meta name="google-site-verification" content="uEMwi9Dm-wa-RyYWqVlbPlAd1vXDIX3WDjImWBioXQU" />
-        </Helmet>
+        <Helmet title={data.site.siteMetadata.title} />
+
         <div className="mainContainer">
-            <Sidebar />          
+          <Sidebar />
 
           {/* only visible when < Tablet */}
           <MobileNav />
@@ -59,25 +51,18 @@ const IndexPage = () => (
           <PageContainer name="container">
             <ContainerHeader />
 
-            {/* below is the meat of the structure */}
             <MainSection>
-              <MyWetPaint />
-              <Rocknbox />
-              <AbrahamLim />
-              <Doahu />
-              <RetailApocalypse />
-              <FauxRealNews />
-              <Highground />
+
+              <AboutMe />
             </MainSection>
 
-            {/* only visible < Tablet res */}
             <PageFooter />
           </PageContainer>
-          {/*  <Link to="/page-2/">Go to page 2</Link> */}
+          
         </div>
       </Layout>
     )}
   />
 )
 
-export default IndexPage
+export default AboutPage

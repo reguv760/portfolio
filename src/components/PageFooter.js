@@ -41,7 +41,7 @@ const PageFooter = () => (
       </a>
     </p>
 
-    <p>Site updated: 1.28.19</p>
+    <p>Site updated: 3.19.19</p>
   </footer>
 )
 

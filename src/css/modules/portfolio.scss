@@ -5,32 +5,28 @@
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   min-height: 15rem;
-  position:relative;
-
+  position: relative;
 
   & .dropShadow {
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
   }
-  &__headerTitle
-  {
-    display:flex;
-    flex-flow:row nowrap;
-    list-style-type:none;
+  &__headerTitle {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
 
-    margin:0;
-    width:100%;
+    margin: 0;
+    width: 100%;
     padding: 1rem 2rem;
     background-color: $subtleBlack;
 
-    & li 
-    {
-      width:50%;
-      margin:0;
-      padding:0;      
+    & li {
+      width: 50%;
+      margin: 0;
+      padding: 0;
 
-      & h2 
-      {
-        font-family: 'Ubuntu Mono', monospace;
+      & h2 {
+        font-family: "Ubuntu Mono", monospace;
         color: $subtleWhite;
         font-size: 2.8rem;
         font-weight: 700;
@@ -38,24 +34,22 @@
       }
     }
 
-    & li:first-child
-    {
+    & li:first-child {
       text-align: left;
-      align-self:center;
+      align-self: center;
     }
 
-    & li:last-child
-    {
+    & li:last-child {
       text-align: right;
-      align-self:center;
+      align-self: center;
     }
 
-    & li.graphic
-    {
-      width:100%;
+    & li.graphic,
+    & li.aboutMe {
+      text-align: left;
+      width: 100%;
     }
   }
-
 
   /* used for website items */
   &__website {
@@ -176,7 +170,7 @@
       top: 0;
       font-size: 2.1rem;
       font-weight: 500;
-      line-height: 2.4rem;
+      line-height: 2.8rem;
       color: $off-white;
       padding: 0 5rem;
     }
@@ -196,6 +190,36 @@
 
     & a:hover {
       background-color: $neonGreen;
+    }
+  }
+
+  /* about me */
+  &__aboutMe {
+    min-height: 88vh;
+    & .row {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      padding: 2rem;
+
+      & .col.img {
+        background-color: transparent;
+      }
+
+      & .col {
+        width: 50%;
+        min-height: 25rem;
+        background-color: $mediumGrey;
+        margin: 1rem;
+        padding: 1rem;
+        color: $subtleWhite;
+
+        & p {
+          color: $subtleWhite;
+          line-height: 1.6em;
+          font-size: 1.6rem;
+        }
+      }
     }
   }
 }

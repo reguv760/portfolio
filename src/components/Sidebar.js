@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Tween } from 'react-gsap'
 import { Link } from 'gatsby'
 
 import RGlogo from './../icons/rg-logo.png'
@@ -7,17 +8,33 @@ import GitHub from './../icons/github.png'
 
 import Resume from './../ReginaldGalang-resume.pdf'
 
-const Sidebar = () => (
-  <aside className="sidebar">
-    <div className="sidebar__logo">
-      <img src={RGlogo} alt="RG:Reggie Galang glyph" />
+
+const Sidebar = () =>
+{
+  return (
+   <aside className="sidebar" >
+    <div className="sidebar__logo" >
+        <img src={RGlogo} alt="RG:Reggie Galang glyph" />
     </div>
 
-    <nav>
-      <ul className="sidebar__nav">
+    <nav >
+      <Tween duration={ `0.6` } to={{ left: `0px`, delay:`0.25`, ease:`Bounce.easeOut` }} >
+      <ul className="sidebar__nav" >
         <li>
-          <Link to="/" className="active_link">
-            Projects
+          <Link to="/" activeStyle={{color: '#33cf33'}}>
+            Web
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/graphic" activeStyle={{color: '#33cf33'}}>
+            Graphic Design
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/about" activeStyle={{color: '#33cf33'}}>
+            About Me
           </Link>
         </li>
         <li>
@@ -25,7 +42,9 @@ const Sidebar = () => (
             R&eacute;sum&eacute;
           </a>
         </li>
+
       </ul>
+      </Tween>
     </nav>
 
     <div className="sidebar__header">
@@ -74,10 +93,12 @@ const Sidebar = () => (
             GatsbyJS
           </a>
         </p>
-        <p>Site updated: 1.28.19</p>
+        <p>Site updated: 3.19.19</p>
       </div>
     </div>
   </aside>
-)
+  )
+ 
+}
 
 export default Sidebar

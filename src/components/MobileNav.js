@@ -2,10 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import RGlogo from './../icons/rg-logo.png'
-import PortfolioIcon from './../icons/portfolio.png'
-import ResumeIcon from './../icons/resume.png'
+import WebIcon from './../icons/web.svg'
+import PortfolioIcon from './../icons/portfolio.svg'
+import ProfileIcon from './../icons/profile.svg'
+import ResumeIcon from './../icons/resume.svg'
 
 import Resume from './../ReginaldGalang-resume.pdf'
+
+const activeStyle = {
+  color: '33cf33',
+}
 
 const MobileNav = () => (
 	<nav className="mobileNav">
@@ -15,9 +21,24 @@ const MobileNav = () => (
 
 		<ul className="mobileNav__links">
 			<li>
-				<Link to="/" className="svg active_link">
-					<img src={PortfolioIcon} alt="Portfolio Mobile Icon" />
-					<p>Projects</p>
+				<Link to="/" activeStyle={activeStyle}>
+					<img src={WebIcon} alt="Web Mobile Icon" />
+					<p>Web</p>
+				</Link>
+			</li>
+
+
+			<li>
+				<Link to="/graphic" activeStyle={activeStyle}>
+					<img src={PortfolioIcon} alt="Graphic Design Mobile Icon" />
+					<p>Graphic Design</p>
+				</Link>
+			</li>
+
+			<li>
+				<Link to="/about" activeStyle={activeStyle}>
+					<img src={ProfileIcon} alt="Profile Mobile Icon" />
+					<p>About Me</p>
 				</Link>
 			</li>
 			<li>
