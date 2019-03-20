@@ -32,11 +32,12 @@ const Sidebar = () =>
           </Link>
         </li>
 
-        <li>
+        { /* <li>
           <Link to="/about" activeStyle={{color: '#33cf33'}}>
             About Me
           </Link>
-        </li>
+        </li> */ }
+        
         <li>
           <a href={Resume} target="_blank" rel="noopener noreferrer">
             R&eacute;sum&eacute;

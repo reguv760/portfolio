@@ -35,12 +35,12 @@ const MobileNav = () => (
 				</Link>
 			</li>
 
-			<li>
+			{ /* <li>
 				<Link to="/about" activeStyle={activeStyle}>
 					<img src={ProfileIcon} alt="Profile Mobile Icon" />
 					<p>About Me</p>
 				</Link>
-			</li>
+			</li> */ }
 			<li>
 				<a
 					href={Resume}
