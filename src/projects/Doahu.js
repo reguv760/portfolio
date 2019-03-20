@@ -3,8 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 // images
-// import doahuFinal from './../img/web/doahu-final.jpg'
-// import doahuMobile from './../img/web/doahu-galaxyS7_mockup.jpg'
+import PortfolioOverlay from "./../components/PortfolioOverlay"
 
 // button
 import WebLink from './../components/WebLink'
@@ -33,14 +32,10 @@ const Doahu = () => (
         <div className="portfolio__website">
           <ul className="portfolio__website-container">
             <li className="portfolio__website-container--fullWidth">
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  <p className="portfolio__overlay-text">
+              <PortfolioOverlay>
 										Travel website promoting both the modern and the natural
 										scenery of Oahu, Hawaii.
-                  </p>
-                </div>
-              </div>
+              </PortfolioOverlay>
 
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}

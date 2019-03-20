@@ -2,8 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-// import RAFinal from './../img/web/rapocalypse-final.jpg'
-// import RAThumb from './../img/web/rapocalypse-iPadPro.jpg'
+import PortfolioOverlay from "./../components/PortfolioOverlay"
 
 // button
 import WebLink from './../components/WebLink'
@@ -33,14 +32,7 @@ const RetailApocalypse = () => (
             <li className="portfolio__website-container--fullWidth">
               {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
 
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  <p className="portfolio__overlay-text">
-										Showcase and listings of past and present retail store
-										closures.
-                  </p>
-                </div>
-              </div>
+              <PortfolioOverlay>Showcase and listings of past and present retail store closures.</PortfolioOverlay>
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Retail Apocalypse"

@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-// import HighgroundMovie from './../img/web/highgroundmovie.jpg'
+import PortfolioOverlay from "./../components/PortfolioOverlay"
 
 // button
 import WebLink from './../components/WebLink'
@@ -27,13 +27,8 @@ const Highground = () => (
             <li className="portfolio__website-container--fullWidth">
               {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
 
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  <p className="portfolio__overlay-text">
-										Website for award winning Independent documentary.
-                  </p>
-                </div>
-              </div>
+              <PortfolioOverlay>Website for award winning Independent documentary.</PortfolioOverlay>
+              
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Highground"

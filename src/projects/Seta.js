@@ -1,6 +1,8 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
+import PortfolioOverlay from "./../components/PortfolioOverlay";
 
 const Seta = () => (
   <StaticQuery
@@ -29,13 +31,10 @@ const Seta = () => (
         <div className="portfolio__gallery">
           <ul className="portfolio__gallery-container">
             <li className="portfolio__gallery-container--hero">
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  <p className="portfolio__overlay-text">
-										Final logo design for upscale restaurant in Whittier, CA
-                  </p>
-                </div>
-              </div>
+
+
+              <PortfolioOverlay>Final logo design for upscale restaurant in Whittier, CA</PortfolioOverlay>
+             
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Seta logo"

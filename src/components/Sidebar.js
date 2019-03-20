@@ -18,7 +18,7 @@ const Sidebar = () =>
     </div>
 
     <nav >
-      <Tween duration={ '0.6' } to={{ left: '0px', delay:'0.25', ease:'Bounce.easeOut' }} >
+      <Tween duration={ `0.6` } to={{ left: `0px`, delay:`0.25`, ease:`Bounce.easeOut` }} >
       <ul className="sidebar__nav" >
         <li>
           <Link to="/" activeStyle={{color: '#33cf33'}}>

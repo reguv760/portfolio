@@ -2,8 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-// import FauxRealFinal from './../img/web/frn-final.jpg'
-// import FauxRealThumb from './../img/web/frn-galaxyTab4-mockup.jpg'
+import PortfolioOverlay from "./../components/PortfolioOverlay"
 
 // button
 import WebLink from './../components/WebLink'
@@ -33,14 +32,7 @@ const FauxRealNews = () => (
             <li className="portfolio__website-container--fullWidth">
               {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
 
-              <div className="portfolio__overlay">
-                <div className="portfolio__overlay-container">
-                  <p className="portfolio__overlay-text">
-										Mockup website for a fictional News organization to counter
-										"fake news". Built with Bootstrap.
-                  </p>
-                </div>
-              </div>
+              <PortfolioOverlay>Mockup website for a fictional News organization to counter "fake news". Built with Bootstrap.</PortfolioOverlay>
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="FauxRealNews"
