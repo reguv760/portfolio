@@ -27,7 +27,7 @@ const Doahu = () => (
       <div className="portfolio">
         <ul className="portfolio__headerTitle">
           <li><h2>Destination: Oahu</h2></li>
-          <li><WebLink link="http://tessellationdesign.com/IMD211/doahu/" /></li>
+          <li>{ /* <WebLink link="http://tessellationdesign.com/IMD211/doahu/" /> */ }</li>
         </ul>
         <div className="portfolio__website">
           <ul className="portfolio__website-container">

@@ -7,16 +7,11 @@ import PortfolioOverlay from "./../components/PortfolioOverlay"
 // button
 import WebLink from './../components/WebLink'
 
-const FauxRealNews = () => (
+const EvanBeigel = () => (
   <StaticQuery
     query={graphql`
 			query {
-        heroImage: file(relativePath: { eq: "web/frn-final.jpg" }) {
-			   ...fluidImage
-		    }
-				mobileThumbnail: file(
-					relativePath: { eq: "web/frn-galaxyTab4-mockup.jpg" }
-				) {
+				heroImage: file(relativePath: { eq: "web/EJB-flashSite.jpg" }) {
 					...fluidImage
 				}
 			}
@@ -24,26 +19,20 @@ const FauxRealNews = () => (
     render={data => (
       <div className="portfolio">
         <ul className="portfolio__headerTitle">
-          <li><h2>FauxRealNews</h2></li>
-          <li></li>
+        	<li><h2>Evan J. Beigel</h2></li>
+        	<li className="link"><WebLink link="http://evanjbeigel.com" /></li>
         </ul>
         <div className="portfolio__website">
           <ul className="portfolio__website-container">
             <li className="portfolio__website-container--fullWidth">
               {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
 
-              <PortfolioOverlay>Mockup website for a fictional News organization to counter "fake news". Built with Bootstrap.</PortfolioOverlay>
+              <PortfolioOverlay>Website for Los Angeles record producer.</PortfolioOverlay>
+              
               <Img
                 fluid={data.heroImage.childImageSharp.fluid}
-                alt="FauxRealNews"
+                alt="Evan J. Beigel"
                 className="dropShadow"
-              />
-            </li>
-
-            <li className="portfolio__website-container--subcontent">
-              <Img
-                fluid={data.mobileThumbnail.childImageSharp.fluid}
-                alt="thumbnail"
               />
             </li>
           </ul>
@@ -53,7 +42,7 @@ const FauxRealNews = () => (
   />
 )
 
-export default FauxRealNews
+export default EvanBeigel
 
 // create graphql as a const
 // to search for images + thumbnails

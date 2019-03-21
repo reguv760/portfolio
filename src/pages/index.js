@@ -21,6 +21,7 @@ import PageFooter from './../components/PageFooter'
 import MyWetPaint from './../projects/MyWetPaint'
 import Rocknbox from './../projects/Rocknbox'
 import AbrahamLim from './../projects/AbrahamLim'
+import EvanBeigel from './../projects/EvanBeigel'
 import Doahu from './../projects/Doahu'
 import RetailApocalypse from './../projects/RetailApocalypse'
 import FauxRealNews from './../projects/FauxRealNews'
@@ -62,12 +63,13 @@ const IndexPage = () => (
             {/* below is the meat of the structure */}
             <MainSection>
               <MyWetPaint />
-              <Rocknbox />
               <AbrahamLim />
-              <Doahu />
+              <Rocknbox />
               <RetailApocalypse />
-              <FauxRealNews />
               <Highground />
+              <EvanBeigel />
+              <Doahu />
+              <FauxRealNews />
             </MainSection>
 
             {/* only visible < Tablet res */}

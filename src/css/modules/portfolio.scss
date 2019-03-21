@@ -8,7 +8,7 @@
   position: relative;
 
   & .dropShadow {
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.75));
   }
   &__headerTitle {
     display: flex;
@@ -21,7 +21,7 @@
     background-color: $subtleBlack;
 
     & li {
-      width: 50%;
+      width: 70%;
       margin: 0;
       padding: 0;
 
@@ -32,6 +32,10 @@
         font-weight: 700;
         letter-spacing: 0.025em;
       }
+    }
+
+    & li.link {
+      width: 30%;
     }
 
     & li:first-child {
