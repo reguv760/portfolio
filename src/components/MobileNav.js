@@ -42,7 +42,7 @@ const MobileNav = () => (
 					<img src={ProfileIcon} alt="Profile Mobile Icon" />
 					About Me
 				</Link>
-			</li> */ }
+			</li> 
 			<li>
 				<a
 					href={ Resume }
@@ -53,7 +53,7 @@ const MobileNav = () => (
 					<img src={ ResumeIcon } alt="Resume Mobile Icon" />
 					R&eacute;sum&eacute;
 				</a>
-			</li>
+			</li> */ }
 		</ul>
 	</nav>
 )
