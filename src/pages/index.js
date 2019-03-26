@@ -64,11 +64,11 @@ const IndexPage = () => (
             <MainSection>
               <MyWetPaint />
               <AbrahamLim />
+              <Doahu />
               <Rocknbox />
               <RetailApocalypse />
               <Highground />
               <EvanBeigel />
-              <Doahu />
               <FauxRealNews />
             </MainSection>
 
