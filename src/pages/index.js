@@ -50,6 +50,15 @@ const IndexPage = () => (
       <Layout>
         <Helmet title={data.site.siteMetadata.title}>
           <meta name="google-site-verification" content="uEMwi9Dm-wa-RyYWqVlbPlAd1vXDIX3WDjImWBioXQU" />
+          <meta
+            name="Keywords"
+            content="Web Developer, Graphic Designer, ReactJS, GatsbyJS"
+          />
+          <meta
+            name="Description"
+            content="Hello, my name is Reginald Galang and I'm a Web Developer + Graphic
+            Designer. Feel free to browse through my projects."
+          />
         </Helmet>
         <div className="mainContainer">
             <Sidebar />          
