@@ -1,11 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
-    siteUrl: `https://reguv760.github.io/portfolio/`,
+    siteUrl: `https://reguv760.github.io/portfolio`,
   },
-  pathPrefix: '/portfolio',
   plugins: [
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: 
+      {
+        exclude: ["/about"],
+      }
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
