@@ -1,24 +1,24 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 //import { Link } from 'gatsby'
 //import Image from '../components/image'
 
-import Layout from './../components/layout'
-import Sidebar from './../components/Sidebar'
-import MobileNav from './../components/MobileNav'
-import PageContainer from './../components/PageContainer'
-import ContainerHeader from './../components/ContainerHeader'
+import Layout from "./../components/layout";
+import Sidebar from "./../components/Sidebar";
+import MobileNav from "./../components/MobileNav";
+import PageContainer from "./../components/PageContainer";
+import ContainerHeader from "./../components/ContainerHeader";
 
 //page structure:::
-import Pagination from './../components/Pagination'
-import PageFooter from './../components/PageFooter'
+import Pagination from "./../components/Pagination";
+import PageFooter from "./../components/PageFooter";
 
 //styled component for page structure
 //used once
 const MainSection = styled.section`
 	width: 100%;
 	background-color: #0f0f0f;
-`
+`;
 
 //this is the structure for /graphic
 const NotFoundPage = () => (
@@ -47,6 +47,6 @@ const NotFoundPage = () => (
 			</PageContainer>
 		</div>
 	</Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

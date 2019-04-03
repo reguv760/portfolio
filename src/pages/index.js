@@ -35,6 +35,7 @@ const MainSection = styled.section`
 
 // this is the structure for index.html (or root directory)
 // template this structure for other pages
+
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
@@ -64,6 +65,7 @@ const IndexPage = () => (
             content="I'm Reginald Galang and I'm a Web Developer + Graphic Designer. Feel free to browse through my projects."
           />
         </Helmet>
+
         <div className="mainContainer">
           <Sidebar />
 

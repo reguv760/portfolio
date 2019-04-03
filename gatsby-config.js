@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
     siteUrl: `https://reginaldgalang.netlify.com/`
