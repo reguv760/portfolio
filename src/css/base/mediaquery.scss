@@ -173,3 +173,13 @@ DESKTOP::: */
     }
   }
 }
+
+//Global Height::: used by SideBar
+@media screen and (max-height: 800px) {
+  .sidebar {
+    &__footer {
+      position: relative;
+      top: calc(5%);
+    }
+  }
+}

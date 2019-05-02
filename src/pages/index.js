@@ -43,6 +43,7 @@ const IndexPage = () => (
         site {
           siteMetadata {
             title
+            siteUpdateDate
           }
         }
       }
@@ -67,7 +68,7 @@ const IndexPage = () => (
         </Helmet>
 
         <div className="mainContainer">
-          <Sidebar />
+          <Sidebar siteUpdateDate={data.site.siteMetadata.siteUpdateDate} />
 
           {/* only visible when < Tablet */}
           <MobileNav />
@@ -88,7 +89,9 @@ const IndexPage = () => (
             </MainSection>
 
             {/* only visible < Tablet res */}
-            <PageFooter />
+            <PageFooter
+              siteUpdateDate={data.site.siteMetadata.siteUpdateDate}
+            />
           </PageContainer>
           {/*  <Link to="/page-2/">Go to page 2</Link> */}
         </div>

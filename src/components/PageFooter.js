@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 /* images */
-import LinkedIn from './../icons/linkedIn.png'
-import GitHub from './../icons/github.png'
+import LinkedIn from "./../icons/linkedIn.png";
+import GitHub from "./../icons/github.png";
 
-const PageFooter = () => (
+const PageFooter = props => (
   <footer className="pagefooter">
     {/* This is a footer area */}
     <ul className="pagefooter__socialmedia">
@@ -32,14 +32,14 @@ const PageFooter = () => (
 
     <p>#using CSS Grid + Flexbox</p>
     <p>
-      Built with{' '}
+      Built with{" "}
       <a href="http://gatsbyjs.org" target="_blank" rel="noopener noreferrer">
         GatsbyJS
       </a>
     </p>
 
-    <p>Site updated: 3.20.19</p>
+    <p>Site updated: {props.siteUpdateDate}</p>
   </footer>
-)
+);
 
-export default PageFooter
+export default PageFooter;

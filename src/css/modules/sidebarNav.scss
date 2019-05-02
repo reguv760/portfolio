@@ -7,7 +7,7 @@
   position: fixed;
 
   /* background:url("../assets/img/rg-logoGlyph.svg");  use this for development make sure bg exist in temp */
-  background: url('../img/rg-logoGlyph.svg'); /* use this for docs build! make sure bg exist in temp */
+  background: url("../img/rg-logoGlyph.svg"); /* use this for docs build! make sure bg exist in temp */
   background-size: cover;
   background-repeat: no-repeat;
   /*background-position: center;*/
@@ -36,11 +36,9 @@
     text-align: center;
     color: $mediumGrey;
 
-    min-height: 8rem;
     width: 100%;
-    padding-top:4rem;
-    position: relative;
-
+    position: absolute;
+    top: calc(100% - 13rem);
 
     & .socialmedia {
       display: block;
@@ -65,7 +63,7 @@
   }
 
   &__footerText p {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: "Ubuntu Mono", monospace;
     margin: 0.5rem 0;
     font-size: 1.4rem;
     text-align: center;
@@ -88,7 +86,7 @@
     position: relative;
     margin: 0 auto 1rem auto;
     width: 75%;
-    left:-18rem;
+    left: -18rem;
 
     & li {
       top: 0;
@@ -98,13 +96,13 @@
     }
 
     & li a {
-      font-family: 'Ubuntu Mono', monospace;
+      font-family: "Ubuntu Mono", monospace;
       color: $darkGrey;
       font-size: 2rem;
       font-weight: 500;
       text-decoration: none;
       letter-spacing: 0.0025em;
-      line-height:1em;
+      line-height: 1em;
     }
 
     & li a:hover {
@@ -129,7 +127,7 @@
     }
 
     & a {
-      font-family: 'Ubuntu Mono', monospace;
+      font-family: "Ubuntu Mono", monospace;
       letter-spacing: 0.0125em;
       color: $darkGreen;
       text-decoration: none;

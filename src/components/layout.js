@@ -1,11 +1,11 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import Helmet from "react-helmet";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
 // import Header from './header'
-import 'normalize.css'
-import './../css/style.scss'
+import "normalize.css";
+import "./../css/style.scss";
 
 // fragment fluidImage on File:::
 // this is a graphql fragment used called by <Img>'s
@@ -35,14 +35,14 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             {
-              name: 'description',
-              content: `Reginald Galang's 2018 Portfolio website`,
+              name: "description",
+              content: `Reginald Galang's 2018 Portfolio website`
             },
             {
-              name: 'keywords',
+              name: "keywords",
               content:
-                'Web Developer, Web Designer, Full Stack Developer, ReactJS, GatsbyJS',
-            },
+                "Web Developer, Web Designer, Full Stack Developer, ReactJS, GatsbyJS"
+            }
           ]}
         >
           <html lang="en" />
@@ -51,10 +51,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
