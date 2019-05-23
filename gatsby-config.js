@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
-    siteUrl: `https://reguv760.github.io/portfolio/`,
+    siteUrl: `https://reguv760.github.io/`,
     siteUpdateDate: `5.2.19`
   },
   plugins: [
