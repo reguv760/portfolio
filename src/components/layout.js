@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
             {
               name: "keywords",
               content:
-                "Web Developer, Web Designer, Full Stack Developer, ReactJS, GatsbyJS"
+                "Web Developer, Web Designer, Graphic Designer, ReactJS, Gatsby, Los Angeles"
             }
           ]}
         >
