@@ -1,37 +1,37 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
 // import { Link } from 'gatsby'
 
-import Layout from "./../components/layout";
+import Layout from './../components/layout'
 // import Image from '../components/image'
 
 // import Header from '../components/header'
-import Sidebar from "./../components/Sidebar";
-import MobileNav from "./../components/MobileNav";
-import PageContainer from "./../components/PageContainer";
-import ContainerHeader from "./../components/ContainerHeader";
+import Sidebar from './../components/Sidebar'
+import MobileNav from './../components/MobileNav'
+import PageContainer from './../components/PageContainer'
+import ContainerHeader from './../components/ContainerHeader'
 
 // page structure:::
-import Pagination from "./../components/Pagination";
-import PageFooter from "./../components/PageFooter";
+// import Pagination from "./../components/Pagination";
+import PageFooter from './../components/PageFooter'
 
 // projects
-import MyWetPaint from "./../projects/MyWetPaint";
-import Rocknbox from "./../projects/Rocknbox";
-import AbrahamLim from "./../projects/AbrahamLim";
-import EvanBeigel from "./../projects/EvanBeigel";
-import Doahu from "./../projects/Doahu";
-import RetailApocalypse from "./../projects/RetailApocalypse";
-import FauxRealNews from "./../projects/FauxRealNews";
-import Highground from "./../projects/Highground";
+import MyWetPaint from './../projects/MyWetPaint'
+import Rocknbox from './../projects/Rocknbox'
+import AbrahamLim from './../projects/AbrahamLim'
+// import EvanBeigel from './../projects/EvanBeigel'
+import Doahu from './../projects/Doahu'
+import RetailApocalypse from './../projects/RetailApocalypse'
+import FauxRealNews from './../projects/FauxRealNews'
+import Highground from './../projects/Highground'
 
 // this defines the main section component:::
 const MainSection = styled.section`
   width: 100%;
   background-color: #efefef;
-`;
+`
 
 // this is the structure for index.html (or root directory)
 // template this structure for other pages
@@ -84,7 +84,7 @@ const IndexPage = () => (
               <Rocknbox />
               <RetailApocalypse />
               <Highground />
-              <EvanBeigel />
+              {/* <EvanBeigel /> */}
               <FauxRealNews />
             </MainSection>
 
@@ -98,6 +98,6 @@ const IndexPage = () => (
       </Layout>
     )}
   />
-);
+)
 
-export default IndexPage;
+export default IndexPage
