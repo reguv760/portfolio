@@ -1,28 +1,28 @@
-import React from "react";
-import Helmet from "react-helmet";
-import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
+import React from "react"
+import Helmet from "react-helmet"
+import styled from "styled-components"
+import { StaticQuery, graphql } from "gatsby"
 
-import Layout from "./../components/layout";
-import Sidebar from "./../components/Sidebar";
-import MobileNav from "./../components/MobileNav";
-import PageContainer from "./../components/PageContainer";
-import ContainerHeader from "./../components/ContainerHeader";
+import Layout from "./../components/layout"
+import Sidebar from "./../components/Sidebar"
+import MobileNav from "./../components/MobileNav"
+import PageContainer from "./../components/PageContainer"
+import ContainerHeader from "./../components/ContainerHeader"
 
 // page structure:::
-import Pagination from "./../components/Pagination";
-import PageFooter from "./../components/PageFooter";
+//import Pagination from "./../components/Pagination";
+import PageFooter from "./../components/PageFooter"
 
 // projects
-import RavenwolfLogo from "./../projects/Ravenwolf";
-import SetaLogo from "./../projects/Seta";
+import RavenwolfLogo from "./../projects/Ravenwolf"
+import SetaLogo from "./../projects/Seta"
 
 // styled component for page structure
 // used once
 const MainSection = styled.section`
   width: 100%;
   background-color: #efefef;
-`;
+`
 
 // this is the structure for /graphic
 const GraphicPage = () => (
@@ -70,6 +70,6 @@ const GraphicPage = () => (
       </Layout>
     )}
   />
-);
+)
 
-export default GraphicPage;
+export default GraphicPage
