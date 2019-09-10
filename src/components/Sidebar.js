@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { Tween } from "react-gsap";
-import { Link } from "gatsby";
+import React from "react"
+import { Tween } from "react-gsap"
+import { Link } from "gatsby"
 
-import RGlogo from "./../icons/rg-logo.png";
-import LinkedIn from "./../icons/linkedIn.png";
-import GitHub from "./../icons/github.png";
+import RGlogo from "./../icons/rg-logo.png"
+import LinkedIn from "./../icons/linkedIn.png"
+import GitHub from "./../icons/github.png"
 
-import Resume from "./../ReginaldGalang-resume.pdf";
+//import Resume from "./../ReginaldGalang-resume.pdf";
 
 const Sidebar = props => {
   return (
@@ -100,7 +100,7 @@ const Sidebar = props => {
         </div>
       </div>
     </aside>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
