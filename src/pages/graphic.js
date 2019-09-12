@@ -14,6 +14,7 @@ import ContainerHeader from "./../components/ContainerHeader"
 import PageFooter from "./../components/PageFooter"
 
 // projects
+import Alchemy from "./../projects/Alchemy"
 import RavenwolfLogo from "./../projects/Ravenwolf"
 import SetaLogo from "./../projects/Seta"
 
@@ -52,6 +53,7 @@ const GraphicPage = () => (
 
             {/* below is the meat of the structure */}
             <MainSection>
+              <Alchemy />
               <RavenwolfLogo />
               <SetaLogo />
             </MainSection>

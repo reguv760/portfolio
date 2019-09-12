@@ -9,22 +9,22 @@ module.exports = {
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
     siteUrl: `https://reguv760.github.io/`,
-    siteUpdateDate: `9.9.19`
+    siteUpdateDate: `9.11.19`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/about"]
-      }
+        exclude: ["/about"],
+      },
     },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/img`
-      }
+        path: `${__dirname}/src/img`,
+      },
     },
     "gatsby-plugin-sass",
     "gatsby-transformer-sharp",
@@ -39,8 +39,8 @@ module.exports = {
         theme_color: "#663399",
         display: "minimal-ui",
         icon: "src/icons/rg-logo.png", // This path is relative to the root of the site.
-        include_favicon: true // Include favicon
-      }
+        include_favicon: true, // Include favicon
+      },
     },
     "gatsby-plugin-offline",
     {
@@ -48,8 +48,8 @@ module.exports = {
       options: {
         trackingId: "UA-6371690-26",
         // Puts tracking script in the head instead of the body
-        head: true
-      }
-    }
-  ]
+        head: true,
+      },
+    },
+  ],
 }
