@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
     siteUrl: `https://reguv760.github.io/`,
-    siteUpdateDate: `9.11.19`,
+    siteUpdateDate: `9.30.19`,
   },
   plugins: [
     {
