@@ -35,7 +35,7 @@ const HairExt = () => (
               {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
 
               <PortfolioOverlay>
-                Website for Hair Stylist in Orange County, CA
+                Website for Hair Stylist in Orange County, CA. Built with ReactJS + Material UI.
               </PortfolioOverlay>
 
               <Img
