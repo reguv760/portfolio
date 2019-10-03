@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
             {
               name: "keywords",
               content:
-                "Web Developer, Web Designer, Graphic Designer, ReactJS, Gatsby, Los Angeles",
+                "Web Developer, Graphic Designer, Hybrid Designer and Developer, Los Angeles, California, ReactJS, GatsbyJS",
             },
           ]}
         >
