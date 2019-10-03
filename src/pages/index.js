@@ -58,6 +58,11 @@ const IndexPage = () => (
           />
 
           <meta
+            name="msvalidate.01"
+            content="53209890CBAEF8B0E67BA4C362E444E5"
+          />
+
+          <meta
             name="keywords"
             content="Web Developer, Graphic Designer, Hybrid Designer and Developer, Los Angeles, California, ReactJS, GatsbyJS"
           />
