@@ -43,6 +43,10 @@ const Layout = ({ children }) => (
               content:
                 "Web Developer, Web Designer, Graphic Designer, ReactJS, Gatsby, Los Angeles"
             }
+            {
+              name: "msvalidate.01",
+              content: "53209890CBAEF8B0E67BA4C362E444E5"
+            }
           ]}
         >
           <html lang="en" />
