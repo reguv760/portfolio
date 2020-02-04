@@ -14,15 +14,11 @@ const Sidebar = props => {
   const tl = new TimelineLite()
 
   useEffect(() => {
-    tl.to(sidebarNavContainer, 0, { css: { visibility: "visible " } }).to(
-      sidebarNavContainer,
-      0.6,
-      {
-        left: `0px`,
-        delay: `0.25`,
-        ease: `Bounce.easeOut`,
-      }
-    )
+    tl.to(sidebarNavContainer, 0.6, {
+      left: `0px`,
+      delay: `0.25`,
+      ease: `Bounce.easeOut`,
+    })
   })
   return (
     <aside className="sidebar">
