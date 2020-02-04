@@ -52,6 +52,7 @@ const IndexPage = () => (
     render={data => (
       <Layout>
         <Helmet title={data.site.siteMetadata.title} />
+
         <div className="mainContainer">
           <Sidebar siteUpdateDate={data.site.siteMetadata.siteUpdateDate} />
 
@@ -62,7 +63,8 @@ const IndexPage = () => (
             <ContainerHeader />
 
             {/* below is the meat of the structure */}
-            <MainSection>
+
+            <MainSection id="trigger">
               <HairExt />
               <MyWetPaint />
               <AbrahamLim />

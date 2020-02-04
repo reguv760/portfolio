@@ -12,23 +12,19 @@ const PortfolioOverlay = props => {
   const tl = new TimelineLite()
 
   useEffect(() => {
-    tl.to(portfolioOverlayText, 0, { css: { visibility: "visible" } }).to(
-      portfolioOverlayText,
-      0.5,
-      {
-        delay: "0.25",
-        css: { marginTop: "0", opacity: "1", transform: "scaleX(1)" },
-        ease: Power2.easeOut,
-      }
-    )
+    tl.to(portfolioOverlayText, 0.5, {
+      delay: "0.25",
+      css: { top: "0", opacity: "1", transform: "scaleX(1)" },
+      ease: Power2.easeOut,
+    })
   })
 
   return (
     <div className="portfolio__overlay">
       <div className="portfolio__overlay-container">
         <p
-          className="portfolio__overlay-text"
           style={initTextStyle}
+          className="portfolio__overlay-text"
           ref={el => (portfolioOverlayText = el)}
         >
           {props.children}

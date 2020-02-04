@@ -33,6 +33,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.0",
+    "react-scrollmagic": "^2.1.1",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 .portfolio {
   /* overlay */
+
   &__overlay {
     width: 100%;
     height: 100%;
@@ -13,6 +14,10 @@
     align-items: center;
     border-radius: 0.15rem;
 
+    &-animateText {
+      opacity: 0;
+    }
+
     &-container {
       display: flex;
       flex-flow: column nowrap;
@@ -23,16 +28,16 @@
 
     &-text {
       position: relative;
-      top: 0;
+      top: 1rem;
       font-size: 2.1rem;
       font-weight: 500;
       line-height: 2.8rem;
       color: $off-white;
       padding: 0 5rem;
       text-shadow: 0.1rem 0.1rem $off-black;
-      visibility: hidden;
+      //visibility: hidden;
       transform: scaleX(0.5);
-      transform-origin: center;
+      opacity: 0;
     }
   }
 }
