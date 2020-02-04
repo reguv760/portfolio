@@ -16,8 +16,8 @@ const PortfolioOverlay = props => {
       portfolioOverlayText,
       0.5,
       {
-        delay: "0.4",
-        css: { marginTop: "0", opacity: "1" },
+        delay: "0.25",
+        css: { marginTop: "0", opacity: "1", transform: "scaleX(1)" },
         ease: Power1.easeOut,
       }
     )
