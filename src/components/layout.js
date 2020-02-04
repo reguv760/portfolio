@@ -46,6 +46,25 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <meta
+            name="google-site-verification"
+            content="uEMwi9Dm-wa-RyYWqVlbPlAd1vXDIX3WDjImWBioXQU"
+          />
+
+          <meta
+            name="msvalidate.01"
+            content="53209890CBAEF8B0E67BA4C362E444E5"
+          />
+
+          <meta
+            name="keywords"
+            content="Web Developer, Graphic Designer, Front End Web Developer, Los Angeles, California, ReactJS, GatsbyJS"
+          />
+
+          <meta
+            name="description"
+            content="I'm Reginald Galang and I'm a Web Developer + Graphic Designer. Feel free to browse through my projects."
+          />
         </Helmet>
         <div>{children}</div>
       </>

@@ -1,36 +1,36 @@
 .portfolio {
-	/* overlay */
-	&__overlay {
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 100;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 0.15rem;
+  /* overlay */
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.15rem;
 
-		&-container {
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: center;
-			margin: 0 auto;
-			transform: scaleX(0); //this should be called by gsap
-			position: relative;
-		}
+    &-container {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin: 0 auto;
+      position: relative;
+    }
 
-		&-text {
-			position: relative;
-			top: 0;
-			font-size: 2.1rem;
-			font-weight: 500;
-			line-height: 2.8rem;
-			color: $off-white;
-			padding: 0 5rem;
-			text-shadow: 0.1rem 0.1rem $off-black;
-		}
-	}
+    &-text {
+      position: relative;
+      top: 0;
+      font-size: 2.1rem;
+      font-weight: 500;
+      line-height: 2.8rem;
+      color: $off-white;
+      padding: 0 5rem;
+      text-shadow: 0.1rem 0.1rem $off-black;
+      visibility: hidden;
+    }
+  }
 }

@@ -40,7 +40,7 @@ const MainSection = styled.section`
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
-      query indexTitleQuery {
+      {
         site {
           siteMetadata {
             title
@@ -51,28 +51,7 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
-        <Helmet title={data.site.siteMetadata.title}>
-          <meta
-            name="google-site-verification"
-            content="uEMwi9Dm-wa-RyYWqVlbPlAd1vXDIX3WDjImWBioXQU"
-          />
-
-          <meta
-            name="msvalidate.01"
-            content="53209890CBAEF8B0E67BA4C362E444E5"
-          />
-
-          <meta
-            name="keywords"
-            content="Web Developer, Graphic Designer, Hybrid Designer and Developer, Los Angeles, California, ReactJS, GatsbyJS"
-          />
-
-          <meta
-            name="description"
-            content="I'm Reginald Galang and I'm a Web Developer + Graphic Designer. Feel free to browse through my projects."
-          />
-        </Helmet>
-
+        <Helmet title={data.site.siteMetadata.title} />
         <div className="mainContainer">
           <Sidebar siteUpdateDate={data.site.siteMetadata.siteUpdateDate} />
 
