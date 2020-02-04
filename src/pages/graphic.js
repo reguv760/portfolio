@@ -29,7 +29,7 @@ const MainSection = styled.section`
 const GraphicPage = () => (
   <StaticQuery
     query={graphql`
-      query gdTitleQuery {
+      {
         site {
           siteMetadata {
             title

@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
 /* images */
-import LinkedIn from "./../icons/linkedIn.png";
-import GitHub from "./../icons/github.png";
+import LinkedIn from "./../icons/linkedIn.png"
+import GitHub from "./../icons/github.png"
 
 const PageFooter = props => (
   <footer className="pagefooter">
@@ -40,6 +40,6 @@ const PageFooter = props => (
 
     <p>Site updated: {props.siteUpdateDate}</p>
   </footer>
-);
+)
 
-export default PageFooter;
+export default PageFooter

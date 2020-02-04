@@ -1,46 +1,41 @@
-import React from "react"
-import { Tween } from "react-gsap"
+import React, { useRef, useEffect } from "react"
+import { TimelineLite, Power1 } from "gsap"
 
 const initTextStyle = {
   opacity: `0`,
   marginTop: `2rem`,
 }
 
-class PortfolioOverlay extends React.Component {
-  mouseEnter = () => {
-    console.log("enter")
-  }
+const PortfolioOverlay = props => {
+  let portfolioOverlayText = useRef(null)
 
-  mouseLeave = () => {
-    console.log("out")
-  }
+  const tl = new TimelineLite()
 
-  render() {
-    return (
-      <div className="portfolio__overlay">
-        <Tween
-          duration={"0.5"}
-          to={{ delay: "0.25", transform: "scaleX(1)", ease: "Power1.easeOut" }}
-        >
-          <div className="portfolio__overlay-container">
-            <Tween
-              duration={"0.5"}
-              to={{
-                delay: `0.5`,
-                marginTop: `0`,
-                opacity: `1`,
-                ease: `Power2.easeOut`,
-              }}
-            >
-              <p className="portfolio__overlay-text" style={initTextStyle}>
-                {this.props.children}
-              </p>
-            </Tween>
-          </div>
-        </Tween>
-      </div>
+  useEffect(() => {
+    tl.to(portfolioOverlayText, 0, { css: { visibility: "visible" } }).to(
+      portfolioOverlayText,
+      0.5,
+      {
+        delay: "0.4",
+        css: { marginTop: "0", opacity: "1" },
+        ease: Power1.easeOut,
+      }
     )
-  }
+  })
+
+  return (
+    <div className="portfolio__overlay">
+      <div className="portfolio__overlay-container">
+        <p
+          className="portfolio__overlay-text"
+          style={initTextStyle}
+          ref={el => (portfolioOverlayText = el)}
+        >
+          {props.children}
+        </p>
+      </div>
+    </div>
+  )
 }
 
 export default PortfolioOverlay

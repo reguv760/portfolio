@@ -1,5 +1,5 @@
-import React from "react"
-import { Tween } from "react-gsap"
+import React, { useRef, useEffect } from "react"
+import { TimelineLite } from "gsap"
 import { Link } from "gatsby"
 
 import RGlogo from "./../icons/rg-logo.png"
@@ -9,45 +9,49 @@ import GitHub from "./../icons/github.png"
 //import Resume from "./../ReginaldGalang-resume.pdf";
 
 const Sidebar = props => {
+  let sidebarNavContainer = useRef(null)
+
+  const tl = new TimelineLite()
+
+  useEffect(() => {
+    tl.to(sidebarNavContainer, 0, { css: { visibility: "visible " } }).to(
+      sidebarNavContainer,
+      0.6,
+      {
+        left: `0px`,
+        delay: `0.25`,
+        ease: `Bounce.easeOut`,
+      }
+    )
+  })
   return (
     <aside className="sidebar">
       <div className="sidebar__logo">
         <Link to="/">
-          <img src={RGlogo} alt="RG:Reggie Galang glyph" />
+          <img src={RGlogo} alt="RG: Reggie Galang glyph" />
         </Link>
       </div>
 
       <nav>
-        <Tween
-          duration={`0.6`}
-          to={{ left: `0px`, delay: `0.25`, ease: `Bounce.easeOut` }}
-        >
-          <ul className="sidebar__nav">
-            <li>
-              <Link to="/" activeStyle={{ color: "#33cf33" }}>
-                Web
-              </Link>
-            </li>
+        <ul className="sidebar__nav" ref={el => (sidebarNavContainer = el)}>
+          <li>
+            <Link to="/" activeStyle={{ color: "#33cf33" }}>
+              Web
+            </Link>
+          </li>
 
-            <li>
-              <Link to="/graphic" activeStyle={{ color: "#33cf33" }}>
-                Graphic Design
-              </Link>
-            </li>
+          <li>
+            <Link to="/graphic" activeStyle={{ color: "#33cf33" }}>
+              Graphic Design
+            </Link>
+          </li>
 
-            {/* <li>
-          <Link to="/about" activeStyle={{color: '#33cf33'}}>
-            About Me
-          </Link>
-        </li> 
-        
-        <li>
-          <a href={Resume} target="_blank" rel="noopener noreferrer">
-            R&eacute;sum&eacute;
-          </a>
-        </li> */}
-          </ul>
-        </Tween>
+          {/* <li>
+            <Link to="/about" activeStyle={{ color: "#33cf33" }}>
+              About Me
+            </Link>
+          </li> */}
+        </ul>
       </nav>
 
       <div className="sidebar__header">
