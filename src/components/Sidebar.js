@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react"
-import { TimelineLite } from "gsap"
+import { TimelineLite } from "gsap/dist/gsap"
 import { Link } from "gatsby"
 
 import RGlogo from "./../icons/rg-logo.png"

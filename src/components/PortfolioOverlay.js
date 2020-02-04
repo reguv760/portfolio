@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react"
-import { TimelineLite, Power1 } from "gsap"
+import { TimelineLite, Power2 } from "gsap/dist/gsap"
 
 const initTextStyle = {
   opacity: `0`,
@@ -18,7 +18,7 @@ const PortfolioOverlay = props => {
       {
         delay: "0.25",
         css: { marginTop: "0", opacity: "1", transform: "scaleX(1)" },
-        ease: Power1.easeOut,
+        ease: Power2.easeOut,
       }
     )
   })
