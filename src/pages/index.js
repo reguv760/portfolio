@@ -64,7 +64,8 @@ const IndexPage = () => (
 
             {/* below is the meat of the structure */}
 
-            <MainSection id="trigger">
+            <MainSection>
+              <div id="trigger" />
               <HairExt />
               <MyWetPaint />
               <AbrahamLim />
