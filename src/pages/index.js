@@ -20,6 +20,8 @@ import PageFooter from "./../components/PageFooter"
 // projects
 import MyWetPaint from "./../projects/MyWetPaint"
 import Rocknbox from "./../projects/Rocknbox"
+
+import Storeytime from "./../projects/Storeytime"
 import AbrahamLim from "./../projects/AbrahamLim"
 // import EvanBeigel from './../projects/EvanBeigel'
 import HairExt from "./../projects/HairExt"
@@ -65,6 +67,7 @@ const IndexPage = () => (
             <MainSection>
               <HairExt />
               <MyWetPaint />
+              <Storeytime />
               <AbrahamLim />
               <Doahu />
               <Rocknbox />
