@@ -42,11 +42,11 @@ const Sidebar = props => {
             </Link>
           </li>
 
-          {/* <li>
+          <li>
             <Link to="/about" activeStyle={{ color: "#33cf33" }}>
               About Me
             </Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
 

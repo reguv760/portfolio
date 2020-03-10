@@ -154,24 +154,46 @@
 
   /* about me */
   &__aboutMe {
+    width: 100%;
     min-height: 88vh;
     & .row {
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: column nowrap;
       justify-content: center;
       padding: 2rem;
 
       & .col.img {
+        display: flex;
+        flex-flow: row nowrap;
         background-color: transparent;
+
+        & .svg {
+          width: 20rem;
+          height: 20rem;
+          margin: 2rem auto;
+          display: flex;
+          justify-content: center;
+          background-color: $opaqueBlack;
+          border-radius: 50%;
+
+          & svg {
+            align-self: center;
+            width: 70%;
+            height: 70%;
+
+            & .icon {
+              color: $brightGreen;
+            }
+          }
+        }
       }
 
       & .col {
-        width: 50%;
-        min-height: 25rem;
-        background-color: $mediumGrey;
+        width: calc(100% - 2rem) !important;
         margin: 1rem;
         padding: 1rem;
         color: $subtleWhite;
+        position: relative;
 
         & p {
           color: $subtleWhite;
