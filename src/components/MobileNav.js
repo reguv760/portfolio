@@ -42,7 +42,7 @@ const MobileNav = () => (
           About Me
         </Link>
       </li>
-      
+     
 			<li>
 				<a
 					href={ Resume }

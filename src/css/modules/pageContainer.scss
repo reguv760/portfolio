@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 20rem 1fr 1fr 1fr;
   grid-template-areas:
-    'mobileNav  mobileNav   mobileNav    mobileNav'
-    'leftCol    rightCol  rightCol     rightCol';
+    "mobileNav  mobileNav   mobileNav    mobileNav"
+    "leftCol    rightCol  rightCol     rightCol";
 
   & .container {
     grid-area: rightCol;
@@ -32,7 +32,7 @@
     }
 
     &__headerEmail {
-      font-family: 'Ubuntu Mono', monospace;
+      font-family: "Ubuntu Mono", monospace;
 
       & a {
         text-decoration: none;
