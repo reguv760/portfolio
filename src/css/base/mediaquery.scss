@@ -13,14 +13,14 @@ DESKTOP::: */
           & .row {
             & .col.img {
               & .svg {
-                width: 15rem;
-                height: 15rem;
+                width: 16rem;
+                height: 16rem;
                 margin: 2rem auto;
 
                 & svg {
                   align-self: center;
-                  width: 60%;
-                  height: 60%;
+                  width: 75%;
+                  height: 75%;
                 }
               }
             }
@@ -60,6 +60,15 @@ DESKTOP::: */
       }
 
       & .portfolio {
+        &__headerTitle {
+          & li {
+            width: 50%;
+
+            & h2 {
+              font-size: 2.4rem;
+            }
+          }
+        }
         &__website-container {
           &--subcontent {
             width: 30%;
@@ -75,12 +84,20 @@ DESKTOP::: */
           &-text {
             font-size: 1.6rem;
             line-height: 2.1rem;
-            padding: 0 3.5rem;
+            padding: 2rem;
           }
         }
 
         &__aboutMe {
           min-height: 40vh;
+          & .row {
+            & .col.img {
+              & .svg {
+                width: 10rem;
+                height: 10rem;
+              }
+            }
+          }
         }
       }
 
@@ -135,8 +152,14 @@ DESKTOP::: */
       }
 
       & .portfolio {
-        & h2 {
-          font-size: 2rem;
+        &__headerTitle {
+          & li {
+            width: 50%;
+
+            & h2 {
+              font-size: 1.8rem;
+            }
+          }
         }
 
         &__website-container {
@@ -172,13 +195,24 @@ DESKTOP::: */
           &-text {
             font-size: 1.4rem;
             line-height: 2rem;
-            padding: 0 2.5rem;
+            padding: 1rem;
           }
         }
 
         &__link {
           & a {
             font-size: 1.3rem;
+          }
+        }
+
+        &__aboutMe {
+          & .row {
+            & .col.img {
+              & .svg {
+                width: 8rem;
+                height: 8rem;
+              }
+            }
           }
         }
       }

@@ -183,10 +183,9 @@ const Ravenwolf = () => (
               </p>
 
               <p>
-                In my spare time, I listen to music with heavy distortions at a
+                In my spare time, I listen to music with heavy distortion at a
                 pace of 160bpm, shredding on the guitar, keeping up with DC
-                Comics continuity, collecting plastic and building models using
-                Lego.
+                Comics continuity and building models using Lego.
               </p>
             </div>
           </div>
