@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import RGlogo from "./../icons/rg-logo.png"
 import WebIcon from "./../icons/web.svg"
 import PortfolioIcon from "./../icons/portfolio.svg"
-//import ProfileIcon from "./../icons/profile.svg"
+import ProfileIcon from "./../icons/profile.svg"
 //import ResumeIcon from './../icons/resume.svg'
 
 //import Resume from './../ReginaldGalang-resume.pdf'
@@ -36,13 +36,13 @@ const MobileNav = () => (
         </Link>
       </li>
 
-      {/* <li>
+      <li>
         <Link to="/about" activeStyle={activeStyle}>
           <img src={ProfileIcon} alt="Profile Mobile Icon" />
           About Me
         </Link>
       </li>
-     
+      {/* 
 			<li>
 				<a
 					href={ Resume }
