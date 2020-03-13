@@ -43,8 +43,9 @@ const AboutMe = () => (
 
               <p>
                 When I'm not designing or coding, I listen to music with heavy
-                distortion at a pace of 160bpm or more, guitar shredding and
-                reading DC Comics. In my spare time, I build my own Lego sets.
+                distortion at a pace of 160bpm or more, shredding on the guitar
+                and reading DC Comics. In my spare time, I build my own Lego
+                sets.
               </p>
             </div>
           </div>
