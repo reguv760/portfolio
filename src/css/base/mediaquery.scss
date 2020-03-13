@@ -11,6 +11,15 @@ DESKTOP::: */
           min-height: 88vh;
 
           & .row {
+            & .col {
+              & h4 {
+                font-size: 1.8rem;
+              }
+              & h4,
+              & p {
+                width: 100%;
+              }
+            }
             & .col.img {
               & .svg-container {
                 & .svg {

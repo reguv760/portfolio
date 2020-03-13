@@ -198,14 +198,17 @@
         position: relative;
 
         & h4 {
-          font-size: 2rem;
+          margin: 2rem 0;
+          font-size: 2.1rem;
           line-height: 1.5em;
+          width: 70%;
         }
 
         & p {
           color: $subtleWhite;
           line-height: 1.6em;
           font-size: 1.6rem;
+          width: 70%;
         }
       }
     }
