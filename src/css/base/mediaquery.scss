@@ -12,15 +12,17 @@ DESKTOP::: */
 
           & .row {
             & .col.img {
-              & .svg {
-                width: 16rem;
-                height: 16rem;
-                margin: 2rem auto;
+              & .svg-container {
+                & .svg {
+                  width: 16rem;
+                  height: 16rem;
+                  margin: 2rem auto;
 
-                & svg {
-                  align-self: center;
-                  width: 75%;
-                  height: 75%;
+                  & svg {
+                    align-self: center;
+                    width: 75%;
+                    height: 75%;
+                  }
                 }
               }
             }
@@ -92,9 +94,16 @@ DESKTOP::: */
           min-height: 40vh;
           & .row {
             & .col.img {
-              & .svg {
-                width: 10rem;
-                height: 10rem;
+              & .svg-container {
+                & .svg {
+                  width: 10rem;
+                  height: 10rem;
+
+                  & svg {
+                    width: 65%;
+                    height: 65%;
+                  }
+                }
               }
             }
           }
@@ -208,9 +217,16 @@ DESKTOP::: */
         &__aboutMe {
           & .row {
             & .col.img {
-              & .svg {
-                width: 8rem;
-                height: 8rem;
+              & .svg-container {
+                & .svg {
+                  width: 7.5rem;
+                  height: 7.5rem;
+
+                  & svg {
+                    width: 60%;
+                    height: 60%;
+                  }
+                }
               }
             }
           }
