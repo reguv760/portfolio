@@ -42,13 +42,29 @@
       display: flex;
       justify-content: center;
       margin: 0.5rem auto;
-      height: 6rem;
-      width: 8rem;
     }
 
-    & li p {
-      color: $mediumGrey;
-      text-align: center;
+    & li {
+      & a {
+        text-align: center;
+        text-decoration: none;
+        color: $off-black;
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.0125em;
+        line-height: 1.2em;
+        & p {
+          text-align: center;
+        }
+      }
+
+      & a:hover {
+        color: $mediumGrey;
+      }
+      & a:hover p {
+        color: $neonGreen;
+        transition: color 300ms ease-out;
+      }
     }
 
     & li object,
@@ -57,23 +73,5 @@
       height: 6rem;
       margin: 0 auto;
     }
-
-    & li p.active_mobileLink {
-      //color: $neonGreen;
-    }
-  }
-
-  & li a {
-    text-align: center;
-    text-decoration: none;
-    color: $off-black;
-    font-size: 1.4rem;
-    font-weight: 500;
-    letter-spacing: 0.0125em;
-    line-height: 1.2em;
-  }
-
-  & li a:hover {
-    opacity: 0.6;
   }
 }
