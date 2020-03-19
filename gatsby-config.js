@@ -14,9 +14,9 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-sitemap`,
-      options: {
-        exclude: ["/about"],
-      },
+      // options: {
+      //   exclude: ["/about"],
+      // },
     },
     "gatsby-plugin-react-helmet",
     {
