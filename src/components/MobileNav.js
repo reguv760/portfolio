@@ -90,6 +90,37 @@ const MobileNav = () => (
         </Link>
       </li>
 
+      {/* <li>
+        <Link to="/hireme" activeStyle={activeStyle}>
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 500 500"
+            enable-background="new 0 0 500 500"
+          >
+            <polygon
+              id="paper"
+              fill="currentColor"
+              className="icon"
+              points="100,64 100,376.999 150,436 400,436 400,64 "
+            />
+            <polygon id="lines" points="155,433 105,374 155,374 " />
+            <g>
+              <rect x="130" y="118" fill="#cfcfcf" width="242" height="4" />
+              <rect x="130" y="155" fill="#cfcfcf" width="242" height="4" />
+              <rect x="130" y="191" fill="#cfcfcf" width="242" height="4" />
+              <rect x="130" y="228" fill="#cfcfcf" width="242" height="4" />
+              <rect x="130" y="265" fill="#cfcfcf" width="100" height="4" />
+              <rect x="130" y="301" fill="#cfcfcf" width="100" height="4" />
+              <rect x="130" y="338" fill="#cfcfcf" width="100" height="4" />
+            </g>
+          </svg>
+          <p>Hire Me!</p>
+        </Link>
+      </li> */}
+
       <li>
         <Link to="/about" activeStyle={activeStyle}>
           {/* <img src={ProfileIcon} alt="Profile Mobile Icon" /> */}

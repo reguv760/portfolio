@@ -42,6 +42,12 @@ const Sidebar = props => {
             </Link>
           </li>
 
+          {/* <li>
+            <Link to="/hireme" activeStyle={{ color: "#33cf33" }}>
+              Hire Me!
+            </Link>
+          </li> */}
+
           <li>
             <Link to="/about" activeStyle={{ color: "#33cf33" }}>
               About Me
