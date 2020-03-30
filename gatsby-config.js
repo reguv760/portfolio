@@ -2,8 +2,8 @@ module.exports = {
   pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
-    siteUrl: `https://reguv760.github.io/`,
-    siteUpdateDate: `3.13.20`,
+    siteUrl: `https://reguv760.github.io/portfolio/`,
+    siteUpdateDate: `3.30.20`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

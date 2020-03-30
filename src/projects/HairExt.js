@@ -55,11 +55,11 @@ const HairExt = () => (
             </li>
 
             <li className="portfolio__website-container--subcontent">
-              {/* <Img
+              <Img
                 fluid={data.mobileThumbnail.childImageSharp.fluid}
                 alt="thumbnail"
-              /> */}
-              <img src={hairIpad} alt="thumbnail" />
+              />
+              {/* <img src={hairIpad} alt="thumbnail" /> */}
             </li>
           </ul>
         </div>
