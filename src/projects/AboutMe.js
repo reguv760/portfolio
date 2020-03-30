@@ -1,7 +1,7 @@
 import React from "react"
 import AboutMeIcons from "../components/AboutMeIcons"
 
-import { StaticQuery, graphql } from "gatsby"
+//import { StaticQuery, graphql } from "gatsby"
 
 const AboutMe = () => (
   <div className="portfolio">

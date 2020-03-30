@@ -2,11 +2,13 @@ module.exports = {
   pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
-    siteUrl: `https://reguv760.github.io/portfolio/`,
+    siteUrl: `https://reguv760.github.io/`,
     siteUpdateDate: `3.30.20`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,9 +18,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -1,11 +1,11 @@
 import React from "react"
 
-import { StaticQuery, graphql } from "gatsby"
+//import { StaticQuery, graphql } from "gatsby"
 
 const HireMe = () => (
   <div className="portfolio">
     <ul className="portfolio__headerTitle">
-      <li className="aboutMe">
+      <li className="hireMe">
         <h2>Why Hire Me for your projects?</h2>
       </li>
     </ul>
