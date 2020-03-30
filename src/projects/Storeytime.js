@@ -7,6 +7,9 @@ import PortfolioOverlay from "./../components/PortfolioOverlay"
 // button
 import WebLink from "./../components/WebLink"
 
+import stFull from "./../img/web/storeyTime-fullSite.jpg"
+import stMobile from "./../img/web/storeyTime-iPhone6.jpg"
+
 const StoreyTime = () => (
   <StaticQuery
     query={graphql`
@@ -41,18 +44,20 @@ const StoreyTime = () => (
                 Website conversion from Wordpress to Gatsby JS + Netlify CMS.
               </PortfolioOverlay>
 
-              <Img
+              {/* <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Storeytime"
                 className="dropShadow"
-              />
+              /> */}
+              <img src={stFull} alt="Storeytime" className="dropShadow" />
             </li>
 
             <li className="portfolio__website-container--subcontent">
-              <Img
+              {/* <Img
                 fluid={data.mobileThumbnail.childImageSharp.fluid}
                 alt="thumbnail"
-              />
+              /> */}
+              <img src={stMobile} alt="thumbnail" />
             </li>
           </ul>
         </div>

@@ -7,6 +7,9 @@ import PortfolioOverlay from "./../components/PortfolioOverlay"
 // button
 import WebLink from "./../components/WebLink"
 
+import hairFull from "./../img/web/dollySite-desktop.jpg"
+import hairIpad from "./../img/web/dollySite-iPad.jpg"
+
 const HairExt = () => (
   <StaticQuery
     query={graphql`
@@ -35,21 +38,28 @@ const HairExt = () => (
               {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="Hero"/>   */}
 
               <PortfolioOverlay>
-                Website for Hair Stylist in Orange County, CA. Built with ReactJS + Material UI.
+                Website for Hair Stylist in Orange County, CA. Built with
+                ReactJS + Material UI.
               </PortfolioOverlay>
 
-              <Img
+              {/* <Img
                 fluid={data.heroImage.childImageSharp.fluid}
+                alt="Hair Extensions by Dolly"
+                className="dropShadow"
+              /> */}
+              <img
+                src={hairFull}
                 alt="Hair Extensions by Dolly"
                 className="dropShadow"
               />
             </li>
 
             <li className="portfolio__website-container--subcontent">
-              <Img
+              {/* <Img
                 fluid={data.mobileThumbnail.childImageSharp.fluid}
                 alt="thumbnail"
-              />
+              /> */}
+              <img src={hairIpad} alt="thumbnail" />
             </li>
           </ul>
         </div>

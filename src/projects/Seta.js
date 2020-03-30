@@ -1,58 +1,67 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-import PortfolioOverlay from "./../components/PortfolioOverlay";
+import PortfolioOverlay from "./../components/PortfolioOverlay"
+
+import seta1 from "./../img/graphic/seta/seta-logo.jpg"
+import seta2 from "./../img/graphic/seta/seta-logo3.jpg"
+import seta3 from "./../img/graphic/seta/seta-logo1.jpg"
 
 const Seta = () => (
   <StaticQuery
     query={graphql`
-			query {
-				heroImage: file(relativePath: { eq: "graphic/seta/seta-logo.jpg" }) {
-					...fluidImage
-				}
-				signageThumbnail1: file(
-					relativePath: { eq: "graphic/seta/seta-logo3.jpg" }
-				) {
-					...fluidImage
-				}
-				signageThumbnail2: file(
-					relativePath: { eq: "graphic/seta/seta-logo1.jpg" }
-				) {
-					...fluidImage
-				}
-			}
-		`}
+      query {
+        heroImage: file(relativePath: { eq: "graphic/seta/seta-logo.jpg" }) {
+          ...fluidImage
+        }
+        signageThumbnail1: file(
+          relativePath: { eq: "graphic/seta/seta-logo3.jpg" }
+        ) {
+          ...fluidImage
+        }
+        signageThumbnail2: file(
+          relativePath: { eq: "graphic/seta/seta-logo1.jpg" }
+        ) {
+          ...fluidImage
+        }
+      }
+    `}
     render={data => (
       <div className="portfolio">
         <ul className="portfolio__headerTitle">
-          <li className="graphic"><h2>Seta: Restaurant</h2></li>
+          <li className="graphic">
+            <h2>Seta: Restaurant</h2>
+          </li>
         </ul>
         <div className="portfolio__gallery">
           <ul className="portfolio__gallery-container">
             <li className="portfolio__gallery-container--hero">
+              <PortfolioOverlay>
+                Final logo design for upscale restaurant in Whittier, CA
+              </PortfolioOverlay>
 
-
-              <PortfolioOverlay>Final logo design for upscale restaurant in Whittier, CA</PortfolioOverlay>
-             
-              <Img
+              {/* <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="Seta logo"
                 className="dropShadow"
-              />
+              /> */}
+              <img src={seta1} alt="Seta logo" className="dropShadow" />
             </li>
             <li className="portfolio__gallery-container--subcontent">
-              <Img
+              {/* <Img
                 fluid={data.signageThumbnail1.childImageSharp.fluid}
                 alt="Seta signage"
-              />
+              /> */}
+              <img src={seta2} alt="Seta signage" />
             </li>
 
             <li className="portfolio__gallery-container--subcontent">
-              <Img
+              {/* <Img
                 fluid={data.signageThumbnail2.childImageSharp.fluid}
                 alt="Seta signage outside"
-              />
+              /> */}
+              <img src={seta3} alt="Seta signage outside" />
             </li>
           </ul>
         </div>

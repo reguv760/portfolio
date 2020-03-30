@@ -4,6 +4,9 @@ import Img from "gatsby-image"
 
 import PortfolioOverlay from "./../components/PortfolioOverlay"
 
+import alchemyLogo from "./../img/graphic/alchemy/AK-logo.jpg"
+import alchemyIG from "./../img/graphic/alchemy/alchemy-instagram.png"
+
 const Seta = () => (
   <StaticQuery
     query={graphql`
@@ -32,17 +35,23 @@ const Seta = () => (
                 Final logo design for Catering service
               </PortfolioOverlay>
 
-              <Img
+              {/* <Img
                 fluid={data.heroImage.childImageSharp.fluid}
+                alt="Alchemy Kitchen logo"
+                className="dropShadow"
+              /> */}
+              <img
+                src={alchemyLogo}
                 alt="Alchemy Kitchen logo"
                 className="dropShadow"
               />
             </li>
             <li className="portfolio__gallery-container--subcontent">
-              <Img
+              {/* <Img
                 fluid={data.alchemyInstagram.childImageSharp.fluid}
                 alt="Application on Instagram Promotion"
-              />
+              /> */}
+              <img src={alchemyIG} alt="Application on Instagram Promotion" />
             </li>
           </ul>
         </div>

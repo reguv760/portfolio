@@ -7,6 +7,9 @@ import PortfolioOverlay from "./../components/PortfolioOverlay"
 // button
 import WebLink from "./../components/WebLink"
 
+import WPFull from "./../img/web/mywetpaint.jpg"
+import WPiPhone from "./../img/web/mywetpaint-iPhone6.jpg"
+
 const MyWetPaint = () => (
   <StaticQuery
     query={graphql`
@@ -40,18 +43,24 @@ const MyWetPaint = () => (
 
               {/* <img src={mwpHero} width="1280" height="800" alt="Hero" /> */}
 
-              <Img
+              {/* <Img
                 fluid={data.heroImage.childImageSharp.fluid}
+                alt="My Wet Paint Studio homepage"
+                className="dropShadow"
+              /> */}
+              <img
+                src={WPFull}
                 alt="My Wet Paint Studio homepage"
                 className="dropShadow"
               />
             </li>
 
             <li className="portfolio__website-container--subcontent">
-              <Img
+              {/* <Img
                 fluid={data.mobileThumbnail.childImageSharp.fluid}
                 alt="thumbnail"
-              />
+              /> */}
+              <img src={WPiPhone} alt="thumbnail" />
             </li>
           </ul>
         </div>

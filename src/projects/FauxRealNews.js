@@ -7,6 +7,9 @@ import PortfolioOverlay from "./../components/PortfolioOverlay"
 // button
 //import WebLink from './../components/WebLink'
 
+import frnFinal from "./../img/web/frn-final.jpg"
+import frnGalaxy from "./../img/web/frn-galaxyTab4-mockup.jpg"
+
 const FauxRealNews = () => (
   <StaticQuery
     query={graphql`
@@ -38,18 +41,20 @@ const FauxRealNews = () => (
                 Mockup website for a fictional News organization to counter
                 "fake news". Built with Bootstrap.
               </PortfolioOverlay>
-              <Img
+              {/* <Img
                 fluid={data.heroImage.childImageSharp.fluid}
                 alt="FauxRealNews"
                 className="dropShadow"
-              />
+              /> */}
+              <img src={frnFinal} alt="FauxRealNews" className="dropShadow" />
             </li>
 
             <li className="portfolio__website-container--subcontent">
-              <Img
+              {/* <Img
                 fluid={data.mobileThumbnail.childImageSharp.fluid}
                 alt="thumbnail"
-              />
+              /> */}
+              <img src={frnGalaxy} alt="thumbnail" />
             </li>
           </ul>
         </div>
