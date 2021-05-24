@@ -12,8 +12,7 @@ const WebLink = ({ link }) => (
   <div>
     <WebLinkStyle className="portfolio__link">
       <a href={link} target="blank" rel="noopener noreferrer">
-				Visit Website =>
-      </a>
+				Visit Website =&gt;</a>
     </WebLinkStyle>
   </div>
 )
