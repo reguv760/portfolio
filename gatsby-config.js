@@ -5,11 +5,11 @@
  */
 
 module.exports = {
-  pathPrefix: "/portfolio",
+  pathPrefix: `/portfolio`,
   siteMetadata: {
     title: `Reggie Galang's portfolio`,
     siteUrl: `https://reguv760.github.io/`,
-    siteUpdateDate: `3.13.20`,
+    siteUpdateDate: `5.24.21`,
   },
   plugins: [
     {
