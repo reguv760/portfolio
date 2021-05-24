@@ -26,7 +26,7 @@ const MobileNav = () => (
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 500 500"
-            enable-background="new 0 0 500 500"
+            enableBackground="new 0 0 500 500"
           >
             <g>
               <path
@@ -59,7 +59,7 @@ const MobileNav = () => (
             x="0px"
             y="0px"
             viewBox="0 0 500 500"
-            enable-background="new 0 0 500 500"
+            enableBackground="new 0 0 500 500"
           >
             <g>
               <g>
