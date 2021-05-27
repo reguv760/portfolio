@@ -22,12 +22,8 @@ const HairExt = () => (
     render={data => (
       <div className="portfolio">
         <ul className="portfolio__headerTitle">
-          <li>
-            <h2>Hair Extensions by Dolly</h2>
-          </li>
-          <li className="link">
-            <WebLink link="http://hairextensionsbydolly.com" />
-          </li>
+          <li><h2>Hair Extensions by Dolly</h2></li>
+          <li><WebLink link="https://dolly-rg.netlify.app/" /></li>
         </ul>
         <div className="portfolio__website">
           <ul className="portfolio__website-container">
