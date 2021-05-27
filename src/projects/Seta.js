@@ -8,16 +8,16 @@ const Seta = () => (
   <StaticQuery
     query={graphql`
 			query {
-				heroImage: file(relativePath: { eq: "graphic/seta/seta-logo.jpg" }) {
+				heroImage: file(relativePath: { eq: "graphic/seta/setaLogo.jpg" }) {
 					...fluidImage
 				}
 				signageThumbnail1: file(
-					relativePath: { eq: "graphic/seta/seta-logo3.jpg" }
+					relativePath: { eq: "graphic/seta/setaLogo3.jpg" }
 				) {
 					...fluidImage
 				}
 				signageThumbnail2: file(
-					relativePath: { eq: "graphic/seta/seta-logo1.jpg" }
+					relativePath: { eq: "graphic/seta/setaLogo1.jpg" }
 				) {
 					...fluidImage
 				}

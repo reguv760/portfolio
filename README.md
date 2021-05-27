@@ -8,6 +8,15 @@
   using <a href="http://gatsbyjs.org">GatsbyJS's</a> default starter
 </h1>
 
+## Troubleshooting
+
+1.  Images not loading properly once deployed to github pages 
+
+    - Due to Gatsby-Image plugin "bug"
+    - images are not properly linked during build/deploy
+    - run 'npm run clean' or 'gatsby clean' THEN deploy 
+
+
 ## 🚀 Quick start
 
 1.  **npm install**

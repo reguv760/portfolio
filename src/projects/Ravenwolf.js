@@ -12,12 +12,12 @@ const Ravenwolf = () => (
     query={graphql`
 			query {
 				heroImage: file(
-					relativePath: { eq: "graphic/ravenwolf/ravenwolf-logo.jpg" }
+					relativePath: { eq: "graphic/ravenwolf/ravenwolfLogo.jpg" }
 				) {
 					...fluidImage
 				}
 				mobileThumbnail: file(
-					relativePath: { eq: "graphic/ravenwolf/ravenwolf-bag.jpg" }
+					relativePath: { eq: "graphic/ravenwolf/ravenwolfBag.jpg" }
 				) {
 					...fluidImage
 				}

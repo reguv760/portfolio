@@ -27,7 +27,7 @@ import AbrahamLim from "./../projects/AbrahamLim"
 import HairExt from "./../projects/HairExt"
 import Doahu from "./../projects/Doahu"
 import RetailApocalypse from "./../projects/RetailApocalypse"
-import FauxRealNews from "./../projects/FauxRealNews"
+// import FauxRealNews from "./../projects/FauxRealNews"
 import Highground from "./../projects/Highground"
 
 // this defines the main section component:::
@@ -65,16 +65,16 @@ const IndexPage = () => (
 
             {/* below is the meat of the structure */}
             <MainSection>
-              <HairExt />
               <MyWetPaint />
               <Storeytime />
+              <HairExt />
               <AbrahamLim />
               <Doahu />
               <Rocknbox />
               <RetailApocalypse />
               <Highground />
-              {/* <EvanBeigel /> */}
-              <FauxRealNews />
+              {/* <EvanBeigel /> 
+              <FauxRealNews /> */}
             </MainSection>
 
             {/* only visible < Tablet res */}

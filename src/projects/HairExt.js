@@ -26,7 +26,7 @@ const HairExt = () => (
             <h2>Hair Extensions by Dolly</h2>
           </li>
           <li className="link">
-            <WebLink link="http://hairextensionsbydolly.com" />
+            <WebLink link="https://dolly-rg.netlify.app/" />
           </li>
         </ul>
         <div className="portfolio__website">
