@@ -25,7 +25,7 @@ const AbrahamLim = () => (
       <div className="portfolio">
         <ul className="portfolio__headerTitle">
         	<li><h2>Law Offices of Abraham L. Lim</h2></li>
-        	<li><WebLink link="http://abrahamlimlaw.com" /></li>
+        	<li><WebLink link="https://abu-react.netlify.app/" /></li>
         </ul>
         <div className="portfolio__website">
           <ul className="portfolio__website-container">
