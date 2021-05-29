@@ -11,6 +11,7 @@ module.exports = {
     siteUrl: `https://reguv760.github.io/`,
     siteUpdateDate: `5.27.21`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: `gatsby-plugin-sitemap`,
