@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div className="layoutContainer">
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -67,7 +67,7 @@ const Layout = ({ children }) => (
           />
         </Helmet>
         <div>{children}</div>
-      </>
+      </div>
     )}
   />
 )
