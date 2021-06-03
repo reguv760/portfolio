@@ -10,7 +10,7 @@ import PageContainer from "./../components/PageContainer";
 import ContainerHeader from "./../components/ContainerHeader";
 
 //page structure:::
-import Pagination from "./../components/Pagination";
+//import Pagination from "./../components/Pagination";
 import PageFooter from "./../components/PageFooter";
 
 //styled component for page structure
@@ -18,6 +18,9 @@ import PageFooter from "./../components/PageFooter";
 const MainSection = styled.section`
 	width: 100%;
 	background-color: #0f0f0f;
+	text-align: center;
+	margin: 1rem;
+	padding: 1rem;
 `;
 
 //this is the structure for /graphic
@@ -29,18 +32,18 @@ const NotFoundPage = () => (
 			<PageContainer name="container">
 				<ContainerHeader />
 
-				<MainSection>
+				{/* <MainSection>
 					<Pagination />
-				</MainSection>
+				</MainSection> */}
 
 				{/* below is the meat of the structure */}
 				<MainSection>
 					<h2>Page not found!</h2>
 				</MainSection>
 
-				<MainSection>
+				{/* <MainSection>
 					<Pagination />
-				</MainSection>
+				</MainSection> */}
 
 				{/* only visible < Tablet res */}
 				<PageFooter />

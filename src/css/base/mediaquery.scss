@@ -3,6 +3,8 @@
 /* only display if browser width is less than 
 
 DESKTOP::: */
+
+
 @media only screen and (max-width: 992px) {
   .mainContainer {
     & .container {
@@ -272,5 +274,14 @@ DESKTOP::: */
       position: relative;
       top: calc(5%);
     }
+  }
+}
+
+
+//add side "limiter" / "breathing room" if it exceeds min-width
+@media only screen and (min-width: 1600px) {
+  .layoutContainer {
+    max-width:95%;
+    margin:0 auto;
   }
 }
